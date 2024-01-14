@@ -1,0 +1,5667 @@
+
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>88,9 Pindai-FM</title>
+<script type="text/javascript" src="https://player.srvsh.com.br/inc/ajax-player.js"></script>
+<style>
+body {
+	background: #0169b0;
+	margin: 0px auto;
+	overflow: hidden;
+}
+#player {
+	width:auto;
+	height:35px;
+	margin:0px auto;
+}
+#player-controles {
+	width:135px;
+	height:30px;
+	text-align:left;
+	float:left
+}
+#player-vu-meter {
+	width:100px;
+	height:30px;
+	text-align:left;
+	float:left
+}
+#player-musica {
+	width:350px;
+	height:35px;
+	text-align:left;
+	padding-top:5px;
+	float:left;
+	cursor:pointer
+}
+#player-links {
+	height:35px;
+	text-align:right;
+	padding-top:5px;
+	float:right
+}
+.marquee {
+    width:100%;
+    height:25px; 
+    overflow:hidden;
+    white-space:nowrap;
+    padding-top:5px;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+.texto_padrao {
+	color: #FFFFFF;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+}
+</style>
+</head>
+
+<body>
+<div id="player">
+
+
+<div id="player-controles">
+<audio id="player_html5" autoplay src="https://stream-149.zeno.fm/bwwwc9r9jogvv?zs=8VP4ECVJRue6Qk1pOEil2g">Seu navegador nÃ£o tem suporte a HTML5</audio><img src="https://player.srvsh.com.br/img/icones/img-icone-player-html5-play.png" width="30" height="30" align="absmiddle" onclick="document.getElementById('player_html5').play();" style="cursor:pointer" />&nbsp;<img src="https://player.srvsh.com.br/img/icones/img-icone-player-html5-pause.png" width="20" height="20" align="absmiddle" onclick="document.getElementById('player_html5').pause();" style="cursor:pointer" />&nbsp;<img src="https://player.srvsh.com.br/img/icones/img-icone-player-html5-mais.png" width="15" height="35" align="top" onclick="document.getElementById('player_html5').volume += 0.1;" style="cursor:pointer" />&nbsp;<img src="https://player.srvsh.com.br/img/icones/img-icone-player-html5-menos.png" width="15" height="35" align="top" onclick="document.getElementById('player_html5').volume -= 0.1;" style="cursor:pointer" />
+<script type="text/javascript">
+// Volume Inicial player HTML5
+document.getElementById("player_html5").volume=1.0;
+</script>
+</div>
+<div id="player-vu-meter"><img src="https://player.srvsh.com.br/img/img-player-vu-meter.gif" width="100" height="25" /></div>
+
+
+
+<div id="player-musica" class="texto_padrao" onclick="abrir_popup_letra();">
+<div class="marquee"><span id="musica_atual"></span></div>
+</div>
+
+<div id="player-links"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new;"><img src="https://thumbs2.imgbox.com/a3/aa/V2iyjYgw_t.jpg" width="16" height="16" border="0" align="absmiddle" /></a>
+&nbsp;<a href="https://www.facebook.com/profile.php?id=100095430692297" javascript:abrir_janela('https://www.facebook.com/profile.php?id=100095430692297);"><img src="https://thumbs2.imgbox.com/0b/6c/HuuXBxcV_t.jpg" width="16" height="16" border="0" align="absmiddle" /></a>
+&nbsp;<a href="https://Instagram.com/radiopindai" javascript:abrir_janela('https://Instagram.com/radiopindai);"><img src="https://thumbs2.imgbox.com/e7/cd/CzD9EqSu_t.jpg" width="16" height="16" border="0" align="absmiddle" /></a>
+
+</div>
+
+</div>
+<script type="text/javascript">
+function abrir_popup_letra() {
+window.open( "https://player.srvsh.com.br/player-letra-musica/13708", "","width=650,height=500,toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=no,resizable=NO" );
+}
+
+document.getElementById('musica_atual').innerHTML = "Pindai FM: Aqui, você é tudo de bom!...";
+</script>
+</body>
+</html>
+<head>
+
+	<meta http-equiv="Content-Type" charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title></title>
+	<link rel="icon" type="image/png" href="https://thumbs2.imgbox.com/e8/3d/zdvtg0Mm_t.jpg" />
+
+	<meta name="description" content="Modelo Rádio V4" />
+	<meta property="og:description" content="Modelo Rádio V4" />
+	<meta name="author" content="Divino Silva" />
+	<meta name="classification" content="Website" />
+	<meta name="robots" content="index, follow" />
+	<meta name="Indentifier-URL" content="https://home.sejahost.com/" />
+	
+  <link href="https://home.sejahost.com/views/api/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://home.sejahost.com/views/api/fontawesome/css/all.css" rel="stylesheet" type="text/css" />
+  <link href="https://home.sejahost.com/views/css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="https://home.sejahost.com/views/api/hover-master/css/hover-min.css" rel="stylesheet" type="text/css" />
+  <link href="https://home.sejahost.com/views/css/main.css" rel="stylesheet" type="text/css" />
+  <link href="https://home.sejahost.com/views/css/responsiveslides.css" rel="stylesheet" type="text/css" />
+  <link href="https://home.sejahost.com/views/api/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+  <link href="https://home.sejahost.com/views/api/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+  <link href="https://home.sejahost.com/views/api/select2/select2.min.css" rel="stylesheet" type="text/css" >
+  <link href="https://home.sejahost.com/views/api/photobox-master/photobox/photobox.css" rel="stylesheet" type="text/css">
+  <link href="https://home.sejahost.com/views/api/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">  
+
+  <style type="text/css">
+
+	body {
+		background-color:#ffffff;
+	}
+	
+	.botao_padrao{
+		display: inline-block;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px; 
+		background-color:  !important;
+		color:  !important;
+	}
+	.botao_padrao:hover{
+		background-color:  !important;
+		color:  !important;
+	}
+
+	a.botao_padrao{
+		display: inline-block;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px; 
+		background-color:  !important;
+		color:  !important;
+	}
+
+	a.botao_padrao:hover{
+		background-color:  !important;
+		color:  !important;
+	}
+
+	a.botao_padrao_a{
+		display: inline-block;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px; 
+		background-color:  !important;
+		color:  !important;
+	}
+	a.botao_padrao_a:hover{
+		background-color:  !important;
+		color:  !important;
+	}
+
+	
+	
+	.margemtopo_interno{
+		position: relative;
+		width: 100%;
+		height:0px;
+	}
+	
+	.titulo_padrao {
+		font-weight: normal;
+		font-size:28px;
+		text-align: left;
+		padding-top:0px !important;
+		padding-bottom:20px;
+		margin-bottom: 0px;
+		width:100%;
+		max-width: 100%; 
+		font-weight: bold;
+		text-align: center;
+		color: ;
+	}
+	.titulo_padrao_linha { 
+		width: 100%;
+		margin-bottom:10px;
+		padding-top: 0px;
+		margin-top:-20px;
+		text-align: center;
+		font-size:30px; 
+		color: ;
+	}
+	
+	.botao_padrao{ 
+	}
+	.botao_padrao:hover{
+		background-color: #2e3092 !important;
+		color:#fff !important;
+	}
+
+	a.botao_padrao_a{
+		display: inline-block;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px; 
+	}
+	a.botao_padrao_a:hover{
+		background-color: #2e3092 !important;
+		color:#fff !important;
+	}
+
+	.botao_upload{ 
+		border:none;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:15px;
+		padding-right:15px;
+		font-size: 13px;
+		cursor: pointer;
+	}
+
+	.contactinfo ul li a {
+		color:#ccc;
+	}
+	.social-icons ul li a {
+		color:#333;
+	}
+
+
+	.shop-menu ul li a {
+		background: none;
+		color:#1a1a1a;
+	}
+	.shop-menu ul li a:hover {
+		background: none;
+	}
+
+
+	.shop-menu ul li {
+		padding-left: 0px;
+	}
+	.shop-menu ul li a:hover {
+		color: #1a1a1a;
+		margin-top:20px;
+	}
+	.shop-menu ul li a:hover {
+		margin-top:20px;
+		color:#1a1a1a;
+	}
+	
+	.nomedousuario {
+		text-align:right;
+		padding-top: 20px;
+		font-size: 14px;
+		color: #000;
+	}   
+
+	.botao_busca_blog {
+		padding: 10px 14px;
+		font-size: 14px !important;
+		border:0px;
+		border-radius: 0px;
+	}
+
+	.texto_menu_resp {
+		display:none;
+		position: absolute;
+		right: 80px;
+		top: 15px;
+		font-size: 14px;
+		color:#000;
+	}
+
+	.category-products .panel-default .panel-heading .panel-title a{
+		color:#1a1a1a;
+	}
+
+	.add-to-cart {
+		width: 100%;
+		border-radius:4px !important;
+	}
+	.add-to-cart:hover {
+		border-radius:4px !important;
+	}
+	.indisponivel{
+	}
+	.indisponivel:hover {
+	}
+
+	.contactinfo ul li:first-child {
+		margin-left: 0px;
+	}
+
+	.left-sidebar h2, .brands_products h2 {
+		color: #000000;
+		font-size:21px;
+	}
+	.category-products {
+		border: 1px solid #ddd;
+	}
+	.banner_lateral{
+		width:100%;
+		text-align:center;
+		margin-top:30px;
+	}
+	.banners_esquerda_responsivo1{
+		display: block;
+	}
+	.banners_esquerda_responsivo2{
+		display: none;	
+	}
+
+	.botao_upload{ 
+		border:none;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:15px;
+		padding-right:15px;
+		font-size: 13px;
+		cursor: pointer;
+	}
+
+	.news_texto{
+		text-align: left;
+		font-size: 26px;
+		font-weight: bold;
+		padding-bottom: 15px;
+		padding-top:40px;
+	}
+	.form_news{
+		border-radius: 20px;
+		width: 100%;
+		height: 40px;
+		background-color: #fff;
+		border:0px;
+		color:#000;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 5px;
+	}
+	.news_botao {
+		font-size: 15px; 
+		border-radius: 20px; 
+		border:0px;
+		font-weight: bold;
+		text-align: center;
+		width: 100%;
+		height: 40px !important; 
+		cursor: pointer;
+		margin-top: 5px;
+	} 
+	.news_botao:hover{
+		background-color: #000000;
+		color: #FFF;
+	}
+
+	.pull-right a {
+		font-weight: normal;
+		font-style: normal;
+		color:#FFF;
+		text-decoration: none;
+		font-size: 13px;
+	}
+	.pull-right a:hover{
+		text-decoration: underline;
+	}
+	a#scrollUp{
+		background: #549c13;
+		color: #FFF;
+	}
+
+	.single-widget h2 {
+		padding-top: 5px;
+		margin-bottom: 10px;
+		color: #FFF;
+	}
+
+	.single-widget ul li a:hover {
+		color:#000;
+	}
+
+
+	.modal-content {
+		border-radius: 0px;
+	}
+	.busca_input{
+		border-radius: 0px;
+	}
+
+	#slider {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-bottom:0px;
+		margin-top: 0px;
+	}
+
+	.control-carousel {
+		top:50%;
+		margin-top:-40px;
+		color: #FFF;
+	}
+	.control-carousel:hover {
+		color:#FFF;
+	}
+	.carousel-indicators li.active {
+		background: #FFF;
+	}
+
+	.banner_central {
+		width: 100%;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.item {
+		padding-left: 0px;
+	}
+
+	.produto_detalhes_titulo {
+		font-size: 24px;
+		color: #000;
+		padding-top: 3px;
+		padding-bottom: 7px;
+		margin-bottom: 25px;
+		font-weight: bold;
+		border-bottom:1px solid #ddd;
+	}
+
+	.produto_detalhes {
+		font-size: 14px;
+		color: #666;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		font-weight: normal;
+	}
+
+	.produto_detalhes_quant{
+		font-size: 15px;
+		color: #666;
+		padding-top: 5px;
+	}
+
+	.produto_detalhes_valor {
+		font-size: 25px;
+		font-weight: bold;
+		color: blue;
+		padding-bottom: 5px;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+
+	#similar-product {
+		margin-top:0px;
+	}
+
+	.produto_imagem_detalhes {
+		display: inline-block;
+		width: 100%;
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+
+	.product-information {
+		border: 1px solid #ddd;
+		padding-left: 35px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 35px;
+		min-height: 300px;
+	}
+	.product-information span {
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+
+	.cart {
+		background: #5a981c;
+		color: #FFF;
+		margin:0px;
+	}
+
+	.cart:hover {
+		background: #528b19;
+		color: #FFF;
+	}
+
+	.item-control {
+		top: 50%;
+		margin-top:-10px;
+	}
+	.item-control i {
+		background: #ccc;
+		color: #000;
+	}
+	.item-control i:hover {
+		background: #eee;
+		color: #333;
+	}
+
+
+	.produtos_detalhes_valortotal{
+		font-size: 14px;
+		color: #666;
+		font-weight:normal;
+		margin-top: 15px;
+	}
+
+	.produtos_detalhes_margin{
+		padding-left: 40px;
+	}
+
+	#produto_detalhes_parcelas{
+		font-size:13px;
+		color:#666;
+		font-weight: normal;
+	}
+
+	.tabela_boa thead tr {
+		background-color: #f2f2f2;
+		border: 0px;
+	}
+
+	.carrinho_lista_imagem{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 15%;
+		height: 75px;
+		float: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	} 
+	.carrinho_lista_texto{
+		float: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 85%;
+	}
+	.carrinho_lista_valor{
+		padding-top: 38px;
+	}
+	.carrinho_lista_remover{
+		padding-top: 31px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.carrinho_quantidade_input{
+		width: 50px;
+		display: inline-block;
+		height: 32px;
+		text-align: center;
+	}
+
+	.botao_finalizar {
+		background: #5a981c;
+		color: #FFF;
+		margin:0px;
+	}
+	.botao_finalizar:hover {
+		background: #528b19;
+		color: #FFF;
+		margin:0px;
+	}
+
+	.botao_continuar_comprando {
+		background: #0067a9;
+		color: #FFF;
+		margin:0px;
+	}
+	.botao_continuar_comprando:hover {
+		background: #005388;
+		color: #FFF;
+		margin:0px;
+	}
+
+
+	#contact-page .form-control {
+		border-radius: 0px;
+	}
+
+
+
+	.carrinho_erro{
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		font-size: 16px;
+		color:#333;
+	}
+
+	.ajuste_botoes_carrinho_d{
+		padding-top:50px; text-align:right;
+	}
+	.ajuste_botoes_carrinho_e{
+		padding-top:50px; text-align:left;
+	}
+
+	.meusdados {
+		background: #0067a9;
+		color: #FFF;
+		margin:0px;
+	}
+	.meusdados:hover {
+		background: #005388;
+		color: #FFF;
+		margin:0px;
+	}
+	.bt_alterar_dados{
+		position: absolute;
+		top: 120px;
+		right: 15px;
+		text-align: right;
+		width: 170px;
+		z-index: 99999;
+	}
+	.tabela_pedidos thead tr {
+		background-color: #f2f2f2;
+		border: 0px;
+	}
+	.tabela_pedidos a{
+		color:#000;
+	}
+	.tabela_pedidos a:hover{
+		color:#999;
+	}    
+	.pedidostabela{
+		padding-bottom:60px;
+		width:70%;
+	}	
+
+	.videos_div{
+		width: 100%;
+		margin-top:5px;
+		margin-bottom: 25px;
+		border-radius: 5px;
+	}
+	.videos_conteudo{
+		width: 100%;
+		height: 315px;
+		overflow: hidden;
+	}
+	.videos_titulo {
+		padding-top: 0px;
+		margin-top: 0px;
+		text-align: left;
+		font-weight: 16px;
+		font-weight: bold;
+	}
+	.videos_descricao {
+		padding-top:-10px;
+		font-size: 14px;
+		text-align: left;
+	}
+	.videos_conteudo {
+		text-align: center;
+		margin-top:15px;
+	}
+	a.videos_categorias{
+		display: block;
+		margin-top: 12px;
+		font-size: 17px;
+		cursor: pointer;
+		font-weight: 400;
+		border-radius: 6px;
+	}
+	a.videos_categorias_topo{
+		display: inline-block;
+		margin-top: 10px;
+		font-size: 15px;
+		cursor: pointer;
+		font-weight: 500;
+		padding-right: 10px;
+		margin-right: 8px;
+		border-radius: 6px;
+	}
+
+
+
+	.redessociais{
+		float: left;
+		margin-top:10px;
+		margin-right: 10px;
+	}
+	.redessociais img{
+		width: 40px;
+	}
+
+
+
+	.social_titulo{
+		font-size: 16px;
+		margin-top: 20px;
+		margin-bottom:10px;
+		font-weight: bold;
+	}
+	.social {
+		padding-bottom: 40px;
+		float: left;
+		width: 60%;
+	}
+	.social ul {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.social li {
+		list-style: none;
+		float: left;
+	}
+	.social li a {
+		display: block;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		color: #fff;
+		margin: 0 3px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		border-radius: 2px;
+		font-size: 16px;
+	}
+
+	.social li a.facebook {
+		background: #5370bb;
+	}
+	.social li a.twitter {
+		background: #6bb8db;
+	}
+	.social li a.pinterest {
+		background: #e95659;
+	}
+	.social li a.googleplus {
+		background: #dd4b39;
+	}
+	.social li a.linkedin {
+		background: #0077b5;
+	}
+	.social li a.whats {
+		background: #44a24c;
+	}
+	.social li a.whatsapp {
+		background: #009f00; 
+	}
+	.social li a:hover {
+		opacity: 0.7;
+		color:#FFF;
+	}
+	.pedido_msg{
+		margin-top:15px;
+		width: 100%;
+		padding: 15px;
+		text-align: left;
+		font-size: 15px;
+	}
+	.pedido_usuario{
+		text-align: left;
+		font-size: 14px; 
+		padding-bottom:10px;
+		color:#666;
+	}
+	.pedido_anexo{
+		text-align: left;
+		font-size: 15px; 
+		padding-top:10px;
+		font-weight: bold;
+	}
+	.pedido_anexo a{
+		color:blue;
+	}
+
+
+
+
+	.produto_imagem {
+		display: inline-block;
+		width: 90%;
+		height: 170px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin:5%;
+		cursor: pointer;
+	}
+	.produto_imagem:hover {
+		opacity: 0.9;
+	}
+
+	.produto_titulo_lista{
+		font-size:14px;
+		cursor: pointer;
+		height: 35px;
+	}
+	.produto_titulo_lista:hover{
+		text-decoration: underline;
+	}
+
+	.product-image-wrapper {
+		border: 1px solid #ddd;
+	} 
+
+	.lista_caminho {
+		text-align:left;
+		padding-left:15px;
+		padding-bottom:25px;
+		padding-top: 7px;
+		color:#999;
+		float:left;
+		font-size: 16px;
+	}
+	.produtos_lista_ordem{
+		text-align:center; 
+		color:#999; 
+		padding-bottom:20px;
+		padding-top:0px;
+	}
+	.produtos_select_ordem{ 
+
+	}
+
+	.produtos_linha{
+		width: 100%;
+		margin-top:14px;
+		margin-bottom: 4px;
+		border-top: 1px solid #f2f2f2;
+	}
+
+	.login_div{
+		text-align: right;
+		padding-bottom: 70px;
+	}
+	.login_form{
+		border-radius: 0px;
+	}
+
+	.cadastro_div{
+		text-align: left;
+		font-size: 24px;
+		padding-bottom: 70px;
+	}
+	.cadastro_form{
+		border-radius: 2px !important;
+		height: 36px !important;
+		width: 100% !important;
+	}
+	.cadastro_select{
+		border-radius: 2px !important;
+		height: 36px !important;
+		width: 100% !important;
+		text-align: left !important;
+	}
+	.select2-container .select2-selection--single{
+		height: 36px !important;
+		border-radius: 2px !important;
+	}
+
+	.select2-container .select2-selection--single .select2-selection__rendered{
+		padding-top:3px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow b{
+		margin-top: 1px;
+	}
+
+	.login_div .cart{
+		display: inline-block;
+		margin:0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+
+	.div_form{
+		padding-top: 10px;
+		width: 100%;
+	}
+
+	.form_erro{
+		color:#c60202;
+		font-size: 14px;
+	}
+	#cadastro_erro_fundo{
+		position: fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		z-index: 9999999;
+		display: none;
+		background-color: rgba(0,0,0,0.5);
+	}
+	#cadastro_erro{
+		position: fixed;
+		left:50%;
+		top:50%;
+		margin-top:-75px;
+		margin-left:-200px;
+		width:400px;
+		height:auto;
+		padding:30px;
+		z-index: 99999999;
+		display: none;
+		background-color: #FFF;
+		font-size: 14px;
+		color: #000;
+		text-align:center;
+		border: 2px solid #666;
+		border-radius: 5px;
+	}
+	.cadastro_msg_interna{
+		font-size: 15px;
+		color:#666;
+		padding-bottom: 20px;
+	}
+
+	#login_erro_fundo{
+		position: fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		z-index: 9999999;
+		display: none;
+		background-color: rgba(0,0,0,0.5);
+	}
+	#login_erro{
+		position: fixed;
+		left:50%;
+		top:50%;
+		margin-top:-75px;
+		margin-left:-200px;
+		width:400px;
+		height:auto;
+		padding:30px;
+		z-index: 99999999;
+		display: none;
+		background-color: #FFF;
+		font-size: 14px;
+		color: #000;
+		text-align:center;
+		border: 2px solid #666;
+		border-radius: 5px;
+	}
+
+	.linha_entrar{
+		border-left: 1px solid #ccc;
+		height: 200px;
+		display: inline-block;
+	}
+
+	.contactinfo ul li a {
+		color:#ccc;
+	}
+	.social-icons ul li a {
+		color:#333;
+	}
+
+	.botao_busca_blog {
+		padding: 10px 14px;
+		font-size: 14px !important;
+		border:0px;
+		border-radius: 0px;
+	}
+
+	.category-products .panel-default .panel-heading .panel-title a{
+
+		color:#1a1a1a;
+
+
+	}
+
+	.contactinfo ul li:first-child {
+		margin-left: 0px;
+	}
+
+	.left-sidebar h2, .brands_products h2 {
+		color: #000000;
+		font-size:21px;
+	}
+	.category-products {
+		border: 1px solid #ddd;
+	}
+
+	
+	
+	
+
+	.pull-right a {
+		font-weight: normal;
+		font-style: normal;
+		color:#FFF;
+		text-decoration: none;
+		font-size: 13px;
+	}
+	.pull-right a:hover{
+		text-decoration: underline;
+	}
+	a#scrollUp{
+		background: #549c13;
+		color: #FFF;
+	}
+
+	.single-widget h2 {
+		padding-top: 5px;
+		margin-bottom: 10px;
+		color: #FFF;
+	}
+
+	.single-widget ul li a:hover {
+		color:#000;
+	}
+
+	.modal-content {
+		border-radius: 0px;
+	}
+
+	.control-carousel {
+		top:50%;
+		margin-top:-40px;
+		color: #FFF;
+	}
+	.control-carousel:hover {
+		color:#FFF;
+	}
+	.carousel-indicators li.active {
+		background: #FFF;
+	}
+
+	.banner_central {
+		width: 100%;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.item {
+		padding-left: 0px;
+	}
+	
+	.produto_detalhes_titulo {
+		font-size: 24px;
+		color: #000;
+		padding-top: 3px;
+		padding-bottom: 7px;
+		margin-bottom: 25px;
+		font-weight: bold;
+		border-bottom:1px solid #ddd;
+	}
+
+	.produto_detalhes {
+		font-size: 14px;
+		color: #666;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		font-weight: normal;
+	}
+
+	.produto_detalhes_quant{
+		font-size: 15px;
+		color: #666;
+		padding-top: 5px;
+	}
+
+	.produto_detalhes_valor {
+		font-size: 25px;
+		font-weight: bold;
+		color: blue;
+		padding-bottom: 5px;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	#valorartevisual{
+		font-size: 15px;
+		color:#333;
+	}
+
+	#similar-product {
+		margin-top:0px;
+	}
+
+	.produto_imagem_detalhes {
+		display: inline-block;
+		width: 100%;
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+	.product-information {
+		border: 1px solid #ddd;
+		padding-left: 35px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 35px;
+		min-height: 300px;
+	}
+	.product-information span {
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.cart {
+		background: #5a981c;
+		color: #FFF;
+		margin:0px;
+	}
+
+	.cart:hover {
+		background: #528b19;
+		color: #FFF;
+	}
+
+
+	.item-control {
+		top: 50%;
+		margin-top:-10px;
+	}
+	.item-control i {
+		background: #ccc;
+		color: #000;
+	}
+	.item-control i:hover {
+		background: #eee;
+		color: #333;
+	}
+
+
+	.produtos_detalhes_valortotal{
+		font-size: 14px;
+		color: #666;
+		font-weight:normal;
+		margin-top: 15px;
+	}
+
+	.produtos_detalhes_margin{
+		padding-left: 40px;
+	}
+
+
+	#produto_detalhes_parcelas{
+		font-size:13px;
+		color:#666;
+		font-weight: normal;
+	}
+
+	.tabela_boa thead tr {
+		background-color: #f2f2f2;
+		border: 0px;
+	}
+
+	.carrinho_lista_imagem{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 15%;
+		height: 75px;
+		float: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	} 
+	.carrinho_lista_texto{
+		float: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 85%;
+	}
+	.carrinho_lista_valor{
+		padding-top: 38px;
+	}
+	.carrinho_lista_remover{
+		padding-top: 31px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.carrinho_quantidade_input{
+		width: 50px;
+		display: inline-block;
+		height: 32px;
+		text-align: center;
+	}
+	.botao_quantidade {
+		background: #5a981c;
+		color: #FFF;
+		margin:0px;
+		width: 50%;
+		display: inline-block;
+	}
+	.botao_quantidade:hover {
+		background: #528b19;
+		color: #FFF;
+	}
+
+	.botao_finalizar {
+		background: #5a981c;
+		color: #FFF;
+		margin:0px;
+	}
+	.botao_finalizar:hover {
+		background: #528b19;
+		color: #FFF;
+		margin:0px;
+	}
+
+	.botao_continuar_comprando {
+		background: #0067a9;
+		color: #FFF;
+		margin:0px;
+	}
+	.botao_continuar_comprando:hover {
+		background: #005388;
+		color: #FFF;
+		margin:0px;
+	}
+
+
+	#contact-page .form-control {
+		border-radius: 0px;
+	}
+
+	.carrinho_erro{
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		font-size: 16px;
+		color:#333;
+	}
+
+	.ajuste_botoes_carrinho_d{
+		padding-top:50px; text-align:right;
+	}
+	.ajuste_botoes_carrinho_e{
+		padding-top:50px; text-align:left;
+	}
+
+	.meusdados {
+		background: #0067a9;
+		color: #FFF;
+		margin:0px;
+	}
+	.meusdados:hover {
+		background: #005388;
+		color: #FFF;
+		margin:0px;
+	}
+	.bt_alterar_dados{ 
+		position: relative;
+		top: 0px;
+		right: 0px;
+		text-align: right;
+		margin:0px;
+		padding-top:5px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	.tabela_pedidos thead tr {
+		background-color: #f2f2f2;
+		border: 0px;
+	}
+	.tabela_pedidos a{
+		color:#000;
+	}
+	.tabela_pedidos a:hover{
+		color:#999;
+	}    
+	.pedidostabela{
+		padding-bottom:60px;
+		width:100%;
+	}
+
+	.div_videos{
+		background-image: url('../img/verde1.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center top;
+		background-size: cover;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 100%;
+		margin-top: 40px;
+		margin-bottom:40px;
+	}
+	.videos_inicial{
+		width: 100%;
+		margin-top:40px;
+	}
+	.video_conteudo{
+		width: 100%;
+		height: 315px;
+		overflow: hidden;
+	}
+	.titulo_video {
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.titulo_video a{
+		color:#FFF;
+		font-size:20px;
+		font-weight: 500;
+		line-height: 0.0;
+	}
+	.titulo_video a:hover{
+		color:#FFF;
+		text-decoration: underline;
+	}
+	.titulo_video_div{
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+
+
+	.redessociais{
+		float: left;
+		margin-top:10px;
+		margin-right: 10px;
+	}
+	.redessociais img{
+		width: 40px;
+	}
+
+	
+
+	.social {
+		padding-bottom: 40px;
+		float: left;
+		width: 60%;
+	}
+	.social ul {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.social li {
+		list-style: none;
+		float: left;
+	}
+	.social li a {
+		display: block;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		color: #fff;
+		margin: 0 3px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		border-radius: 2px;
+		font-size: 16px;
+	}
+
+	.social li a.facebook {
+		background: #5370bb;
+	}
+	.social li a.twitter {
+		background: #6bb8db;
+	}
+	.social li a.pinterest {
+		background: #e95659;
+	}
+	.social li a.googleplus {
+		background: #dd4b39;
+	}
+	.social li a.linkedin {
+		background: #0077b5;
+	}
+	.social li a.whatsapp {
+		background: #009f00; 
+	}
+	.social li a:hover {
+		opacity: 0.7;
+		color:#FFF;
+	}
+
+	.pedido_msg{
+		margin-top:15px;
+		width: 100%;
+		padding: 15px;
+		text-align: left;
+		font-size: 15px;
+	}
+	.pedido_usuario{
+		text-align: left;
+		font-size: 14px; 
+		padding-bottom:10px;
+		color:#666;
+	}
+	.pedido_anexo{
+		text-align: left;
+		font-size: 15px; 
+		padding-top:10px;
+		font-weight: bold;
+	}
+	.pedido_anexo a{
+		color:blue;
+	}
+
+	.facebookwidgets{
+		z-index: 999999999999;
+		position:fixed;
+		right:-360px;
+		top:50%;
+		margin-top:20px;
+	}
+	.facebookwidgets .botao {
+		background: url("https://home.sejahost.com/views/img/facebook.png") no-repeat scroll left center transparent !important;
+		float: left;
+		width: 30px;
+		height: 110px;
+		cursor: pointer;
+	}
+	.facebookwidgets .conteudo{
+		float:right;
+		background-color: #FFF;
+		padding: 15px;
+	}
+
+	.produto_imagem_lupa{
+		width: 100%;
+		height: 100%; 
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0;
+	}
+
+
+	.botao_leitura{
+		border-radius: 0px;
+		color:#000;
+		font-weight: bold;
+		border:1px solid #ddd;
+	}
+
+	#scrollUp {
+	}
+	#scrollUp:hover{
+	}
+
+	#depoimentos {
+		position: relative;
+		width: 100%;
+		height: auto;
+		min-height: 300px; 
+		padding-bottom: 50px;
+	}
+	#slider-depoimentos{
+		height: 370px;
+	}
+	.depoimentos_inicial_conteudo{
+		font-size: 17px;
+		text-align: center;
+		padding-top: 80px;
+		width: 100%;
+	}
+	.depoimentos_inicial_imagem{
+		margin-top: 30px;
+		text-align: center;
+		height: 70px;
+		overflow: hidden; 
+		width:100%;
+	}
+	.depoimentos_inicial_imagem img{
+		height: 70px;
+	}
+	.depoimentos_inicial_nome{
+		font-size: 18px;
+		font-weight: bold;
+		margin-top:10px;
+		text-align: center;
+	}
+	.depoimentos_inicial_cidade{
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.depoimentos_lista{
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+	.depoimentos_lista_conteudo{
+		font-size: 16px;
+		color:#666;
+		text-align: center;
+		width: 100%;
+	}
+	.depoimentos_lista_nome{
+		font-size: 17px;
+		color:#000;
+		font-weight: bold;
+		padding-top: 15px;
+		text-align: center;
+	}
+	.depoimentos_lista_cidade{
+		font-size: 14px;
+		color:#000;
+		text-align: center;     
+	}
+
+	.depoimentos_lista_imagem{
+		padding-top: 30px;
+		text-align: center;
+	}
+	.depoimentos_lista_imagem img{
+		max-width: 250px;
+	}
+
+
+	.produto_titulo_lista{
+		height: auto;
+		font-weight: bold;
+	}
+
+	.carousel-indicators{
+		bottom: 40px;
+	}
+
+	.nome_cliente{
+		font-size: 16px;
+		text-align: left;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+
+	.bt_alterar_dados .add-to-cart{
+		margin-bottom: 0px;
+	}
+
+	.productinfo p {
+		font-size: 13px;
+	}
+	.produto_imagem {
+		display: inline-block;
+		width: 90%;
+		height: 170px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin:5%;
+		cursor: pointer;
+	}
+	.produto_imagem:hover {
+		opacity: 0.9;
+	}
+	.produto_titulo_lista{
+		font-size:14px;
+		cursor: pointer;
+		height: 35px;
+	}
+	.produto_titulo_lista:hover{
+		text-decoration: underline;
+	}
+
+	.product-image-wrapper {
+		border: 1px solid #ddd;
+	}
+	.lista_caminho {
+		text-align:left;
+		padding-left:15px;
+		padding-bottom:25px;
+		padding-top: 7px;
+		color:#999;
+		float:left;
+		font-size: 16px;
+	}
+
+	.produtos_linha{
+		width: 100%;
+		margin-top:14px;
+		margin-bottom: 4px;
+		border-top: 1px solid #f2f2f2;
+	}
+	.login_div{
+		text-align: right;
+		padding-bottom: 70px;
+	}
+	.login_form{
+		border-radius: 0px;
+	}
+	.login_div .cart{
+		display: inline-block;
+		margin:0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.form_erro{
+		color:#c60202;
+		font-size: 14px;
+	}
+	#cadastro_erro_fundo{
+		position: fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		z-index: 9999999;
+		display: none;
+		background-color: rgba(0,0,0,0.5);
+	}
+	#cadastro_erro{
+		position: fixed;
+		left:50%;
+		top:50%;
+		margin-top:-75px;
+		margin-left:-200px;
+		width:400px;
+		height:auto;
+		padding:30px;
+		z-index: 99999999;
+		display: none;
+		background-color: #FFF;
+		font-size: 14px;
+		color: #000;
+		text-align:center;
+		border: 2px solid #666;
+		border-radius: 5px;
+	}
+	.cadastro_msg_interna{
+		font-size: 15px;
+		color:#666;
+		padding-bottom: 20px;
+	}
+	#login_erro_fundo{
+		position: fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		z-index: 9999999;
+		display: none;
+		background-color: rgba(0,0,0,0.5);
+	}
+	#login_erro{
+		position: fixed;
+		left:50%;
+		top:50%;
+		margin-top:-75px;
+		margin-left:-200px;
+		width:400px;
+		height:auto;
+		padding:30px;
+		z-index: 99999999;
+		display: none;
+		background-color: #FFF;
+		font-size: 14px;
+		color: #000;
+		text-align:center;
+		border: 2px solid #666;
+		border-radius: 5px;
+	}
+
+	.linha_entrar{
+		border-left: 1px solid #ccc;
+		height: 200px;
+		display: inline-block;
+	}
+
+	.panel-default>.panel-heading .badge{
+		background-color: transparent;
+		color:#000;
+	}
+
+	.banner_frete{
+		width: 100%;
+		padding-top:0px;
+		padding-bottom:0px;
+		text-align: center;
+		background-color:#fff;
+	}
+	.banner_frete img{
+		width: 100%;
+	}
+
+
+
+	.pagination {
+		font-family: 'Roboto', sans-serif;
+	}
+	.pagination>li:last-child>a, .pagination>li:last-child>span {
+		border-radius: 0px;     
+	}
+
+	.pagination li a, .pagination li span {
+	}
+	.pagination li a:hover, .pagination li span :hover{
+	}
+	.pagination li a:hover, .pagination li span :hover{
+	}
+
+	.pi-pagenav li {
+		background: transparent;
+		border-radius: 0px;
+		margin:1px;
+	}
+	.pi-pagenav li:hover {
+		background: transparent; 
+		border-radius: 0px;
+	}
+	.pi-pagenav li a{ 
+	}
+	.pi-pagenav li a:hover{ 
+	}
+	.pi-pagenav li a.active:hover{ 
+	}
+	.pi-pagenav li .active { 
+		border-radius: 0px;
+	}
+	.pi-pagenav a:active, .pi-pagenav a.active { 
+	}
+	.pi-pagenav a:active:hover, .pi-pagenav a.active:hover { 
+	}
+	.pi-pagenav a {
+		border-radius: 0px; 
+	}
+
+	.instagram{
+		position: relative;
+		background-image: url(https://home.sejahost.com/views/img/fundo_insta.png);
+		width: 100%;
+	}
+	.instagram_titulo_conta{
+		font-size: 30px;
+		font-weight: 500;
+		text-align: center;
+		width: 100%;
+		padding-top: 30px;
+		color:#000;
+	}
+	.instagram_miniaturas{
+		margin-top: 30px;
+		width: 100%;
+		height: auto;
+		padding-bottom:50px;
+		text-align: center;
+	}
+	.instagram_miniaturas a{
+		display: inline-block;
+		width:150px;
+		margin-left:3px;
+		margin-right:3px;
+		margin-bottom: 10px;
+	}
+	.instagram_miniaturas a img{
+		width: 100%;	
+	}
+
+	.carousel-pause{
+		position: absolute;
+		right: 20px;
+		bottom:7px;
+		z-index: 9999;
+		background-color: #fff;
+		border-radius: 0 0 0px 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.botao_normal{
+		cursor: pointer;
+		padding:7px;
+		display: inline-block;
+		font-size:17px; 
+	}
+	.botao_preto{
+		cursor: pointer;
+		padding:7px;
+		display: inline-block;
+		font-size:17px;
+		color:#000;
+	}
+
+	a.prev{
+		position: absolute;
+		left: 10px;
+		top:230px;
+		background-image: url(https://home.sejahost.com/views/img/setabanner2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 0px;
+		width:20px;
+		height:20px;
+		z-index: 999999;
+	}
+	a.next{
+		position: absolute;
+		right: 10px;
+		top:230px;
+		background-image: url(https://home.sejahost.com/views/img/setabanner1.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 0px;
+		width:20px;
+		height:20px;
+		z-index: 999999;
+	}
+
+a.prev{
+	position: absolute;
+	left: 10px;
+	top:230px;
+	background-image: url(https://home.sejahost.com/views/img/setabanner2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px;
+	width:20px;
+	height:20px;
+	z-index: 999999;
+}
+a.next{
+	position: absolute;
+	right: 10px;
+	top:230px;
+	background-image: url(https://home.sejahost.com/views/img/setabanner1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px;
+	width:20px;
+	height:20px;
+	z-index: 999999;
+}
+.callbacks_nav{
+	opacity: 0.9;
+	width: 50px;
+	margin:15px;
+}
+.callbacks_nav.prev{
+	display: none;
+	margin-top:-50px;
+	background-image: url(https://home.sejahost.com/views/img/setabanner2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	z-index: 9999
+}
+.callbacks_nav.next{
+	display: none;
+	margin-top:-50px;
+	background-image: url(https://home.sejahost.com/views/img/setabanner1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	z-index: 9999
+}
+.callbacks_container{
+	padding-top: 0px;
+}
+.callbacks_tabs{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom:15px;
+	text-align: center;
+	z-index: 9999;
+}
+.callbacks_tabs li{
+	width: 26px !important;
+	height: 20px !important;
+	display: inline-block;
+}
+.callbacks_tabs a {
+	visibility: visible; 
+	padding: 5px;
+	width: 26px !important;
+	height: 20px !important;	 
+	border-radius:90px;
+	font-weight: 600;
+	font-size: 0px;
+	border:5px solid #FFBF00;
+}
+.callbacks_tabs a {
+background-color: #ddd;
+border: none;
+color: black;
+padding: 0px 6px;
+text-align: center;
+font-size: 18px;
+margin: 4px 4px;
+transition: 0.3s;
+}
+
+.callbacks_tabs a:hover {
+background-color: #FFBF00;
+color: white;
+}
+.callbacks_tabs a:hover {
+	text-decoration: none; 
+}
+
+.callbacks_tabs a:after{
+	display: none;
+}
+.callbacks_tabs li.callbacks_here a {
+	text-decoration: none; 
+}
+
+	.produtos_item_destaque{
+		
+	}
+	.bx-viewport{
+		border:0px !important;
+		-webkit-box-shadow:none !important;
+	}
+	
+	
+	.botao_arte{
+		background-color: blue;
+		text-align: center
+	}
+	.botao_arte span{
+		font-size: 15px !important;
+		color:#fff !important;
+		margin-right: 0px !important;
+	}
+
+
+
+
+
+	.destaques_inicial_imagem{
+		width: 100%;
+		height: 170px;
+		background-size: cover;
+		background-position:center;
+		background-repeat: no-repeat;
+	}
+	a.quadros_inicial{
+		display:block;
+		width: 100%;
+		height:230px;
+		background-size: cover;
+		background-position:center;
+		background-repeat: no-repeat;
+	}
+	.quadros_inicial_titulo{
+		display: block;
+		font-size: 26px;
+		color:#fff;
+		font-weight: bold;
+		text-align: center;
+		padding-left:20px;
+		padding-right:20px;
+		padding-bottom:20px;
+		padding-top:50px;
+		width: 100%;
+		text-shadow: 2px 2px 3px #000000;
+	}
+	
+	a.duvidas_lista{
+		display: block;
+		margin-top: 15px;
+		font-size: 16px;
+		font-weight: bold;
+		color: #000;
+		cursor: pointer;
+	}
+	a.duvidas_lista_ativo{
+		display: block;
+		margin-top: 15px;
+		font-size: 16px;
+		font-weight: bold; 
+		cursor: pointer;
+	}
+
+	a.duvidas_lista_topo{
+		display: inline-block;
+		margin-top: 10px;
+		font-size: 15px;
+		font-weight: 500;
+		color: #000;
+		cursor: pointer;		 
+		padding-right:10px;
+		margin-right:8px;
+	}
+	a.duvidas_lista_topo_ativo{
+		display: inline-block;
+		margin-top: 15px;
+		font-size: 15px;
+		font-weight: 500; 
+		cursor: pointer;
+		padding-right:10px;
+		margin-right:8px;
+	}
+
+	.duvidas_pergunta{
+		display: block;
+		margin-top: 15px;
+		font-size:18px;
+		font-weight: bold;
+
+	}
+
+	.duvidas_resposta{
+		display: block;
+		margin-top:15px;
+		font-size:15px;
+	}
+	
+	.duvidas_div{
+		margin-top: 30px;
+		margin-bottom: 80px;
+	}
+
+
+	a.servicos_item{
+		display: block;
+		margin-top:30px;
+		width: 100%;
+	}
+	.servicos_img{
+		width:100%;
+		height:150px;
+		overflow:hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.servicos_img img{
+		width: 100%;
+	}
+	.servicos_titulo{
+		margin-top:10px;
+		font-size: 15px;
+		text-align: center;
+		font-weight: bold;
+		color:#666;
+	}
+
+
+	a.filiais_item{
+		display: block;
+		margin-top:30px;
+		width: 100%;
+	}
+	.filiais_img{
+		width:100%;
+		height:220px;
+		overflow:hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.filiais_img img{
+		width: 100%;
+	}
+	.filiais_titulo{
+		margin-top:10px;
+		font-size: 15px;
+		text-align: center;
+		font-weight: bold;
+		color:#666;
+	}
+
+	.parceiros_item{
+		width:100%;
+		max-width: 100%;
+		text-align: center;
+	}
+	.parceiros_img_div{
+		text-align: center !important;
+		width: 100%;
+	}
+	a.parceiros_img{
+		height:150px;
+		width:300px;
+		text-align: center !important;
+		display: table-cell;
+		vertical-align: middle;
+	}
+    .parceiros_img {
+    /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+    transition: transform 250ms;
+	}
+	.parceiros_img:hover {
+        transform: translateY(-10px);
+	}	
+	a.parceiros_img img{
+		max-height: 100%;
+		display: inline-block !important;
+	}
+	.parceiros_cidade{
+		font-size: 12px;
+		margin-top:7px;
+	}
+	.parceiros_fone{
+		font-size: 12px;
+		font-weight: 500;
+		margin-top:1px;
+	}
+
+
+	.video_inicial{
+		width: 100%;
+	}
+	.video_inicial iframe{
+		width: 100% !important;
+		height: 380px;
+	}
+
+	a.servicos_imagens_interno{
+		display: inline-block;
+		margin: 10px;
+		width:auto;
+		height:150px;
+	}
+	a.servicos_imagens_interno img{
+		height:100%; 
+	}
+
+
+	.blocos_sess{
+		position: relative;
+		width: 100%;
+		padding-top:40px;
+		padding-bottom:70px;
+	}
+	.bloco_imagem{
+		width: 100%;
+		margin-top: 30px;
+	}
+	.bloco_imagem img{
+		width: 100%;
+	}
+	.bloco_titulo{
+		margin-top: 35px;
+		text-align: left;
+		font-size:24px;
+		color:#666;
+		font-weight: bold;
+	}
+	.bloco_descricao{
+		margin-top:30px;
+		color:#000;
+		text-align: left;
+		font-size: 16px;
+		width: 100%;
+	}
+	.bloco_botao_div{
+		display: block;
+		text-align: center;
+		margin-top:10%;
+		vertical-align: bottom;
+		height: 100%; 
+
+
+	}
+
+	a.blocos_botao{
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius:3px;
+		font-size: 16px;
+		font-weight: bold;
+
+	}
+
+	a.ultimos_servicos_img{
+		display: block;
+		width: 100%;
+		text-align: center;
+		height: 180px;
+		margin-top:30px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+
+	.caracteristicas_div{
+		width: 100%;
+		margin-top: 30px;
+		text-align: center;
+	}
+	.caracteristicas_img{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.caracteristicas_img img{
+		width:60%;
+	}
+    .caracteristicas_img{	max-width: 100%; /*largura maxima */	margin:0px;	-webkit-transition: all 0.4s linear;	-moz-transition: all 0.4s linear;	transition: all 0.4s linear;	-webkit-animation: smallToBig 600ms alternate infinite ease;	-moz-animation: smallToBig 600ms alternate infinite ease;   }   @-webkit-keyframes smallToBig{from {-webkit-transform: scale(1);}to {-webkit-transform: scale(1.1);}}   @-moz-keyframes smallToBig{from {-moz-transform: scale(1);}to {-moz-transform: scale(0.9);}}
+}
+	.caracteristicas_titulo{
+		margin-top: 15px;
+		font-size: 17px;
+		font-weight:bold;
+		color:#333;
+	}
+	.caracteristicas_descricao{
+		font-size: 14px;
+		color: #666;
+		font-weight: 400;
+	}
+
+
+	.planos_div{
+		box-shadow:0 10px 25px 0 rgba(6, 12, 34, 0.1);
+		width: 100%;
+		height: auto;
+		padding: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+		text-align: left;
+		margin-top: 20px;
+	}
+	.planos_titulo{
+		text-align: left;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.planos_descricao{
+		text-align: left;
+		font-size:15px;
+		margin-top: 15px;		
+	}
+	.planos_icone{
+		text-align: left;
+		font-size:24px;
+		margin-bottom: 10px; 
+	}
+	.planos_imagem{
+		text-align: center;
+		margin-bottom: 10px; 
+	}
+	.planos_imagem img{
+		width:auto;
+		max-width:100%; 
+	}
+	.planos_valor{
+		margin-top:10px;
+		text-align: left;
+		font-size: 32px;
+		font-weight:500;
+		font-weight: bold;
+	}
+	a.planos_botao{
+		display:inline-block;
+		font-size: 15px;
+		border-radius:10px;
+		padding: 10px 40px;
+		transition: all 0.2s;
+		background-color: #f82249;
+		border: 0;
+		color: #fff;
+		width: 100%;
+		text-align: center;
+	}
+
+	.planos_itens{
+		margin:0px;
+		padding: 0px !important;
+		list-style: none;
+		text-align: left;
+		margin-top:0px;
+		margin-bottom: 20px;
+	} 
+	.planos_itens li{
+		margin:0px;
+		padding: 0px;
+		margin-top:7px;
+		font-size:14px;
+	}
+	.planos_itens li span{
+		display: inline-block;
+		width: 25px;
+		text-align: left;
+	}
+
+
+	.contador_div{
+		width: 100%;
+		text-align: center;
+		margin-top:30px;
+	}
+	.contador_img{
+		width: 100%; 
+	}
+	.contador_img img{
+		width: auto !important;
+		height: 50px;
+	}
+	.contador_valor{
+		font-size: 36px;
+		margin-top: 15px;
+		font-weight: bold;
+	}
+	.contador_titulo{
+		font-size:22px;
+		font-weight: 500;
+	}
+
+
+	.acordeon_titulo{ 
+		width: 100%;
+		text-align: left;
+		font-size: 16px;
+		font-weight: bold;
+		border-radius:7px;
+	}
+	.acordeon_titulo:active, .acordeon_titulo:focus, .acordeon_titulo:hovers{ 
+	}
+	.acordeon_titulo i{
+		margin-right:6px;
+		font-size: 14px;
+	}
+	.acordeon_titulo:hover{ 
+		width: 100%;
+		text-align: left;
+		text-decoration: none;
+	}
+	.acordeon_descricao{  
+		width: 100%;
+	}
+
+
+	a.fotos1_div{
+		display: block;
+		width: 100%;
+		height: 220px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		cursor: pointer;
+	}
+
+    .fotos1_div:hover {
+        opacity: 0.8;
+	}
+		.fotos1_div{
+            color: #fff;
+            width:100%;
+            height:618px;
+            border: 0px solid white;
+            background-color: white;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.35);
+            transition: transform 250ms ease-in-out;  
+            transition: box-shadow 0.2s ease-in-out;
+			transition: transform 250ms;
+        }
+        .fotos1_div:hover {
+            border: 6px solid white;
+            transform: scale(1.0); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+			transition: transform 250ms;
+        }
+		.fotos1_div {
+		-webkit-animation: fadeIn 1s linear;
+		-moz-animation: fadeIn 1s linear;
+		-o-animation: fadeIn 1s linear;
+		-ms-animation: fadeIn 1s linear;
+		animation: fadeIn 1s linear;
+		visibility: visible;
+		opacity:1;
+		position: relative;
+	}
+	
+	a.fotos2_div{
+		display: block;
+		width: 100%;
+		height: 200px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		cursor: pointer;
+		margin-top:40px;
+	}
+	a.fotos2_titulo{
+		display:block;
+		text-align: center;
+		margin-top: 10px;
+		font-size: 15px;
+		font-weight: 500;
+		width: 100%;
+	}
+
+	a.fotos_imagens_interno{
+		display: inline-block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width:200px;
+		height:150px;
+		margin: 15px;
+	}
+	
+	a.fotos_categorias{
+		display: block;
+		margin-top: 15px;
+		font-size: 16px;
+		cursor: pointer;
+		font-weight: 500;
+	}
+	a.fotos_categorias_topo{
+		display: inline-block;
+		margin-top: 10px;
+		font-size: 15px;
+		cursor: pointer;
+		font-weight: 500;
+		padding-right: 10px;
+		margin-right: 8px;
+	}
+	
+	
+	.anim-section {
+		position: relative;
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+		-moz-transform: translateY(20px);
+		-webkit-transform: translateY(20px);
+		-o-transform: translateY(20px);
+		-ms-transform: translateY(20px);
+		transform: translateY(20px);
+		visibility: visible;
+		opacity: 0
+	}
+	.anim-section.animate {
+		-moz-transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-o-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		transform: translateY(0px);
+		visibility: visible;
+		opacity: 1
+	}
+	.fadeIn-section{
+		visibility: visible;
+		opacity: 0;
+		position: relative;
+	}
+	@-webkit-keyframes fadeIn {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+	@-moz-keyframes fadeIn {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+	@-o-keyframes fadeIn {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+	@-ms-keyframes fadeIn {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+	@keyframes fadeIn {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+	.fadeIn {
+		-webkit-animation: fadeIn 1s linear;
+		-moz-animation: fadeIn 1s linear;
+		-o-animation: fadeIn 1s linear;
+		-ms-animation: fadeIn 1s linear;
+		animation: fadeIn 1s linear;
+		visibility: visible;
+		opacity:1;
+		position: relative;
+	}
+
+
+	a.destaques_div{
+		display: block;
+		width: 100%;
+		position: relative;
+		margin-left:0px;
+		margin-right:0px;
+	}
+    .destaques_div {
+    /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+    transition: transform 250ms;
+	}
+	.destaques_div:hover {
+        transform: translateY(-10px);
+	}
+	.destaques_img{
+		width: 100%;
+		height:380px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.destaques_titulo{
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		bottom:0px;
+		padding:10px;
+		font-weight: 500;
+		font-size: 15px;
+		text-align: center;
+	}
+	
+	.contato_form{
+		border-radius:2px;
+		width:100%;
+		height:40px;
+	} 
+	.botao_contato{
+		text-align:right;
+		padding-top:18px;
+		padding-bottom:40px;
+	}
+
+
+
+	.equipe_div{
+		width: 100%;
+		margin-top: 30px;
+		text-align: center;
+	}
+	.equipe_img{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+    .equipe_img {
+    /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+    transition: transform 250ms;
+	}
+	.equipe_img:hover {
+        transform: translateY(-10px);
+	}
+	.equipe_img img{
+		display: inline-block;
+		width:auto !important;
+		height: 200px;
+	}
+	.equipe_titulo{
+		margin-top: 5px;
+		font-size: 17px;
+		font-weight: bold;
+		color:#333;
+	}
+	.equipe_descricao{
+		font-size: 14px;
+		color: #666;
+		font-weight: 400;
+	}
+
+
+	.noticias_imagem_lateral_interna{
+		width:40%;
+		float:left;
+		margin-right:20px;
+		margin-bottom:10px;
+	}
+
+
+	.noticias_1_div{
+		padding-top:0px;
+		padding-left:0px;
+		padding-right:0px;
+		padding-bottom:10px;
+		margin-top:0px;
+		height: auto; 
+	}
+	.noticias_1_1_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:350px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+	}
+	.noticias_1_1_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_1_2_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:260px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+	}
+	.noticias_1_2_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_1_3_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:200px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+	}
+	.noticias_1_3_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_1_4_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:150px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+	}
+	.noticias_1_4_img:hover{
+		opacity: 0.9;
+	}
+	a.noticias_1_item{
+		width: 100%;
+		margin-top: 20px;
+		display: inline-block;
+	}
+	.noticias_1_titulo{
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: 10px;
+		color:#000;
+	}
+	.noticias_1_previa{
+		margin-top:5px;
+		width: 100%;
+		font-size: 14px;
+		color:#666;
+	}
+
+
+
+	.noticias_2_div{
+		padding-top:0px;
+		padding-left:0px;
+		padding-right:0px;
+		padding-bottom:10px;
+		margin-top:0px;
+		height: auto; 
+	}
+	.noticias_2_1_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:350px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+		border-radius:5px;
+		position: relative;
+	}
+	.noticias_2_1_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_2_2_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:350px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+		border-radius:5px;
+		position: relative;
+	}
+	.noticias_2_2_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_2_3_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:200px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+		border-radius:5px;
+		position: relative;
+	}
+	.noticias_2_3_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_2_4_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:150px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+		border-radius:5px;
+		position: relative;
+	}
+	.noticias_2_4_img:hover{
+		opacity: 0.9;
+	}
+	a.noticias_2_item{
+		width: 100%;
+		margin-top: 20px;
+		display: inline-block;
+	}
+	.noticias_2_titulo{
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		padding: 10px;
+		font-size: 19px;
+		font-weight: bold; 
+		color:#fff;
+		border-radius:0px 0px 5px 5px;
+	}
+
+	.banner_topo{
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		max-height: 130px;
+	}
+	.banner_topo .rslides{
+		text-align: center;
+	}
+	.banner_topo .rslides li{
+		text-align: center !important;
+	}
+	.banner_topo .rslides img{
+		width: auto !important;
+		max-height: 130px;
+		display: inline-block !important;
+		float: none;
+	}
+
+
+	.noticias_3_div{
+		padding-top:0px;
+		padding-left:0px;
+		padding-right:0px;
+		padding-bottom:10px;
+		margin-top:0px;
+		height: auto; 
+	}
+	.noticias_3_1_img{
+		margin-bottom:10px;
+		width: 100%;
+		height:350px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+	}
+	.noticias_3_1_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_3_2_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:260px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+	}
+	.noticias_3_2_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_3_3_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:200px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+	}
+	.noticias_3_3_img:hover{
+		opacity: 0.9;
+	}
+	.noticias_3_4_img{
+		margin-bottom:20px;
+		width: 100%;
+		height:150px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+	}
+	.noticias_3_4_img:hover{
+		opacity: 0.9;
+	}
+	a.noticias_3_item{
+		width: 100%;
+		margin-top: 20px;
+		display: inline-block;
+	}
+	.noticias_3_titulo{
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 10px;
+		color:#000;
+	}
+	.noticias_3_data{
+		margin-top:5px;
+		margin-bottom:10px;
+		width: 100%;
+		font-size: 12px;
+		color:#666;
+	}
+	.noticias_3_previa{
+		margin-top:5px;
+		width: 100%;
+		font-size: 13.5px;
+		color:#666;
+	}
+
+
+	.link_busca{
+		color: #333;
+	}
+
+
+	a.edicoes_div{
+		display: block;
+		margin-top:30px;
+		text-align: center;
+		width: 100%;
+		cursor: pointer;
+	}
+	.edicoes_img{
+		width: 100%;
+		text-align: center;		
+	}
+	.edicoes_img img{
+		max-width: 100%;		
+	}
+	.edicoes_titulo{
+		margin-top: 15px;
+		font-weight:500;
+		font-size: 15px;		
+	}
+
+
+	.panel-body ul{
+		padding-left: 10px;
+	}
+
+
+	#whats_janela{
+		width: 340px;
+		max-width: 100%;
+		position: fixed;
+		z-index: 99999;
+		bottom: 90px;
+		right: 20px;
+		display: none;
+		background-color: rgba(235,229,222,1);
+		border-radius: 0px 15px 0px 15px;
+		justify-content: center;
+	}
+	.whats_janela_top{
+		font-family: Helvetica, Arial, sans-serif;
+		background-color: #008939;
+		border-radius: 0px 15px 0px 15px;
+		justify-content: center;
+		padding-top:15px;
+		padding-right:15px;
+		padding-bottom:15px;
+		padding-left:15px;
+		color:#fff;
+		font-size: 16px;
+	}
+	.whats_janela_bt{
+		align-items: center;
+		align-self: center;
+		background-color: rgba(83,164,81,1);
+		border-bottom-style: none;
+		border-color: #000000;
+		border-left-style: none;
+		border-radius: 5px;
+		border-right-style: none;
+		border-top-style: none;
+		border-width: 0px;
+		color: #FFFFFF;
+		cursor: pointer;
+		display: -ms-flexbox;
+		display: flex;
+		flex-direction: column;
+		font-family: Open Sans, sans-serif;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: normal;
+		height: 48px;
+		justify-content: center;
+		line-height: 1.42857;
+		margin-bottom: 0px;
+		margin-top: 9px;
+		max-width: 438px;
+		text-align: center;
+		text-decoration: none;
+		width: 100%;
+	}
+
+
+	.form_rastr{
+		border-radius: 2px;
+		width: 350px;
+		max-width: 100%;
+		height: 40px; 
+		color:#000;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 5px;
+		display: inline-block;
+		text-align: center;
+	}
+
+
+	#div_radio{
+
+	}
+	.faixa_radio{
+		position:fixed;
+		left: -10px;
+		width: 55%;
+		border-radius: 0px 15px 0px 15px;
+		box-shadow:0 10px 25px 0 rgba(6, 12, 34, 0.1);
+		bottom: 0px;
+		z-index: 9999;
+		background-color: #000000; 
+		padding-top:10px;
+		padding-bottom:10px;
+		height: 60px;
+		overflow: hidden;
+}
+
+	.play_radio{
+		text-align: center;
+		float: left;
+		margin-top:-5px;
+	}
+	.icon_play_radio{
+		font-size:38px;
+	}
+
+    .icon_play_radio:hover {
+        opacity: 0.8;
+	}
+	.icon_play_radio i{
+		color: #ffbf00;		 
+	}
+	.icon_pause_radio{
+		font-size: 36px;
+	}
+	.icon_pause_radio i{	
+		color: #ffbf00;
+	}
+
+	.radio_texto{
+		font-size: 19px;
+		color: #ffbf00;
+		display: inline-block;
+		padding-left: 10px;
+		float: left;
+		padding-top:9px;
+
+	}
+
+	.radio_titulo{		 
+		font-size: 14px;
+		text-align: center;
+		padding-top:10px;
+		height:40px;
+		width: 80px;
+		float: left;
+		margin-right:10px;
+	}
+	.radio_atual{
+		margin-left: 30px;
+		color: #ffffff;
+
+	}
+
+	.radio_proximo{
+		margin-left: 10px;	
+		color: #ffffff;
+	}
+
+	.radio_programa{
+		font-size: 15px;
+		margin-top:-0px;
+	}
+	.radio_apresentador{
+		font-size: 12px; 
+	}
+
+
+	.fot-fixd {
+		z-index: 99999999999;
+		flex-direction: row;
+		width: 100%;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #000;
+		padding: 20px;
+		display: flex; 
+		color: #fff;
+		vertical-align: middle;
+	}
+	.fot-fixd-box {
+		display: flex;
+		align-items: center;
+		align-content: space-between;
+	}
+	.fot-cookie-show {
+		cursor: pointer;
+		margin-right: 20px;
+		font-weight: 700;
+	}
+	.fot-fixd-close {
+		cursor: pointer;
+		display: inline-block;
+		border-radius: 15px 0px 15px 0px;
+		width: 145px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		color: #333;
+		background: #f1d600;
+		font-weight: 700;
+	}
+    .fot-fixd-close:hover {
+     opacity: 0.8;
+	}
+	.fot-fixd-msg {
+		line-height: 20px;
+		padding: 10px 0;
+		padding-right: 20px;
+		font-size: 16px;
+		flex: 1 1 auto;
+		max-width: 100%;
+		
+	}
+
+</style>  <style type="text/css">
+
+
+  @media (max-width: 1600px){
+
+    .banner_central {
+      width: 100%;
+      height: 400px;
+    }
+
+  }
+
+
+  @media (max-width: 1200px){
+
+    .produto_imagem_detalhes{
+      height: 370px;
+    }
+
+    .banner_central {
+      width: 100%;
+      height: 300px;
+    }
+
+  }
+
+
+  @media (max-width: 990px){
+
+    .product-information {
+      min-height: 50px;
+    }
+    .produto_imagem_detalhes{
+      height:auto;
+    }
+    .facebookwidgets{
+      display: none;
+    }
+    .pedidostabela{
+      width:100%;
+    }
+    .ajuste_botoes_carrinho_d{
+      padding-top:30px; text-align:center;
+    }
+    .ajuste_botoes_carrinho_e{
+      padding-top:50px; text-align:center;
+    }
+    .botao_contato{
+      padding-top:10px; padding-bottom:30px;
+    }
+    .produtos_detalhes_margin{
+      padding-left: 0px;
+    }
+
+    .rodape_copy_esq{
+      text-align: center;
+    }
+    .rodape_copy_dir {
+      text-align: center;
+      padding-top: 0px;
+    }
+
+    .linha_entrar{
+      display: none;
+    }
+
+    .lista_caminho {
+      text-align:center;
+      width: 100%;
+      padding: 0px;
+    }
+    .lista_ordem{
+      text-align:center;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+
+
+    .mainmenu_banner{
+      display: none;
+    } 
+
+    .noticias_caixa_inicial{
+      min-height:none;
+      height: auto;
+    }
+
+    .bt_alterar_dados{
+      position:relative;
+      padding-bottom: 40px;
+      text-align: left;
+      left:0px;
+    }
+
+    .logo{
+      text-align: left;
+      margin-top:15px;
+    }
+    .logo img{
+      max-height:auto;
+      height: auto;
+      width: 100%;
+    }
+
+    #slider-carousel .item {
+      padding-left: 0px;
+    }
+
+    .product-information{
+      margin-top:20px;
+    }
+    .produto_imagem_detalhes{
+      height:450px;
+    }
+    .produtos_detalhes_margin{
+      padding-left: 20px;
+    }
+    .product-information .cart {
+      margin-top: 0px;
+    }
+
+
+    .noticias_imagem_lateral_interna{
+      width:50%;
+      float:left;
+      margin-right:20px;
+      margin-bottom:10px;
+    }
+
+    .bt_alterar_dados{
+      position:relative;
+      padding-bottom: 10px;
+      text-align: left;
+      left:0px;
+      margin-top:30px !important;
+    }
+    
+  }
+
+
+  @media (max-width:768px){
+
+    #divradiodepois{
+      display: none;
+    }
+    
+    .banners_esquerda_responsivo1{
+      display: none;
+    }
+    .banners_esquerda_responsivo2{
+      display: block;  
+    }
+
+    .news_texto{
+      text-align: center;
+      font-size: 14px; 
+    }
+    
+
+    .lista_caminho {
+      text-align:center;
+      width: 100%;
+      padding: 0px;
+    }
+    .lista_ordem{
+      text-align:center;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .linha_entrar{
+      display: none;
+    }
+
+    .shop-menu .nav.navbar-nav{
+      margin-left: -30px;
+    }
+
+    .rodape_copy_esq{
+      text-align: center;
+    }
+    .rodape_copy_dir {
+      text-align: center;
+      padding-top: 0px;
+    }
+
+    .product-information {
+      min-height: 50px;
+    }
+    .produto_imagem_detalhes{
+      height:auto;
+    }
+    .facebookwidgets{
+      display: none;
+    }
+    .noticias_caixa_inicial{
+      min-height:none;
+      height: auto;
+    }
+    .bt_alterar_dados{
+      position:relative;
+      padding-bottom: 40px;
+      text-align: left;
+      left:0px;
+    }
+    .pedidostabela{
+      width:100%;
+    }
+    .ajuste_botoes_carrinho_d{
+      padding-top:30px; text-align:center;
+    }
+    .ajuste_botoes_carrinho_e{
+      padding-top:50px; text-align:center;
+    }
+    .botao_contato{
+      padding-top:10px; padding-bottom:30px;
+    }
+    .produtos_detalhes_margin{
+      padding-left: 0px;
+    }
+    .product-information {
+      min-height: 50px;
+    }
+    .rodape_copy_esq{
+      text-align: center;
+    }
+    .rodape_copy_dir {
+      text-align: center;
+      padding-top: 0px;
+    } 
+    .linha_entrar{
+      display: none;
+    }
+
+    .busca_div{
+      width:95%;
+    }
+
+    .botao_carrinho_esq{
+      margin-top:20px;
+    }
+    .botao_carrinho_dir{
+      margin-top:15px;
+    }
+
+    #lateral_categorias{
+      display: none;
+    }
+    
+    .duvidas_div{
+      border-top:1px solid #666;
+      padding-top:50px;
+      margin-top:70px;
+      margin-bottom: 80px;
+    }
+    
+    .video_inicial iframe{
+      width: 100% !important;
+      height: 280px;
+    }
+
+
+    .noticias_imagem_lateral_interna{
+      width:100%;
+      float:left;
+      margin-right:0px;
+      margin-bottom:20px;
+    }
+
+    .radio_titulo{
+      display: none;
+    }
+    .radio_atual{
+      margin-left: 10px;
+    }
+
+  }
+
+  @media (max-width: 580px){
+
+    .banner_central {
+      width: 100%;
+      height: 100px;
+    }
+
+  }
+
+  @media (max-width: 480px){
+
+    .header_top{
+      display: none;
+    }
+    .contactinfo {
+      display: none;
+    }
+    .shop-menu ul li a {
+      margin-top:30px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .botao_carrinho_esq{
+      margin-right: 0px;
+      font-size: 30px;
+      margin-top:25px;
+      padding-left:10px;
+    }
+
+  }
+
+</style>
+  <style type="text/css">
+  body {
+    background-color:#ffffff;
+  }
+</style>
+
+</head>
+<body>
+
+  
+  <div id="modal_janela" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div id="fecharmodal" style="position: absolute; z-index: 999; top:-10px; right:-7px; font-size: 26px; cursor: pointer;" onclick="fecharmodaljanela();" ><i class="fas fa-times-circle"></i></div>
+		<div class="modal-content">
+			<div class="modal-body">
+				<div id="modal_conteudo" style="padding:15px;" ></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function fecharmodaljanela(){
+		$('#modal_janela').modal('hide'); 
+	}
+</script>
+  
+  <style type="text/css">
+
+	.topo11{
+		background-color: #000000;
+	}
+
+	.header-middle .container .row {
+		border-bottom: 0px;
+	}
+	.header-middle .container .row {
+		border-bottom: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	.header-bottom {
+		padding:0px;
+		margin: 0px;
+		border-top:0px; 
+		background-color: #ffbf00;
+		padding-top:-10px;
+	}
+	.logo{
+		text-align: center;
+		margin-top:0px;
+			width: 90%;
+		max-width:100%;
+	}
+	.logo img{ 
+		width: 90%;
+		max-width:100%;
+		margin-top: 30px;
+	}
+	.busca_div{
+		margin-top:15px;
+		margin-bottom:0px;
+		text-align: center;
+		width: 100%;
+	} 
+
+	.email_topo{
+		float: left;
+		margin-top:36px;
+		font-size: 15px;
+		font-weight: bold;
+		padding-top: 3px;
+		padding-right:20px; 
+		text-align: left;
+	}
+	.email_topo i{
+		font-size: 15px;
+	}
+	.whats_topo{
+		float: left;
+		margin-top:35px;
+		font-size: 16px;
+		font-weight: bold;
+		padding-top: 3px;
+		text-align: left;
+		padding-left:20px;
+		padding-right:20px;
+	}
+	.whats_topo i{
+		font-size: 15px;
+	}
+	.redes_topo{
+		float: left;
+		text-align: center;
+		padding-top: 10px;
+		padding-left: 20px;
+	}
+	a.redes_topo_item{
+		display: inline-block;
+		padding-left:5px;
+		padding-right: 5px;
+		margin-top:2px;
+	}
+	a.redes_topo_item img{
+		height: 24px;
+	}
+	.mainmenu ul li a{ 
+		font-weight: 400;
+	}
+	.mainmenu ul li a { 
+		font-size: 20px;
+	}
+	.mainmenu ul li a:hover{
+		font-weight: 400;
+	}
+	.mainmenu ul li a.active{ 
+		font-weight: 500;
+	}
+	.navbar-collapse.collapse {
+		padding-top: 7px;
+	}
+	.navbar-collapse.collapse {
+		padding-top: 0px;
+	}
+	.navbar-header{
+		width: 100%;
+		text-align: center;
+	}
+	.mainmenu ul {
+		width: 100%;
+		height: 95px;
+		text-align: center; 
+	}
+	.mainmenu ul li{
+		float: none;
+		display: inline-block;
+		margin:0px;
+		padding:0px;
+		position:inherit;
+		height:92px;
+	}
+	.mainmenu ul li a{
+		position:inherit;
+		display: table-cell;
+		font-size: 12px; 
+		width:130px; 
+		height:auto;
+		padding-top:15px;
+		padding-bottom:15px;
+		padding-left:5px;
+		padding-right:5px;
+	} 
+
+	.mainmenu_txt{
+		padding-top:0px;
+		display: block;
+		font-size: 18px;
+		text-align: center;
+		line-height: 15px;
+		width: 100%;
+		height:25px;
+		color:#222222 !important; 
+	}
+	.mainmenu_img{
+		display: block;
+		width:100%;
+		height:42px;
+		text-align: center;
+	}
+	.mainmenu ul li img{
+		max-width: 42px;
+		max-height: 42px;
+	}
+	.mainmenu ul li ul{
+		position: absolute;
+		top:87px;
+		width:100%;
+		min-width:100%;
+		height: auto;
+		min-height:200px; 
+		margin-left:20px;
+		margin-right:20px;
+		margin-top: 0px;
+	}
+	.mainmenu ul li ul li{
+		position: relative;
+		width:50%;
+		height: auto;
+		padding: 0px;
+		margin: 0px;
+		text-align: left;
+		max-width: 50%;
+		display: block;
+		float: left; 
+	}
+	.mainmenu ul li ul li a{
+		position: relative; 
+		width: auto;
+		height: auto;		
+		margin-left: 25px;
+		margin-right: 25px;
+		text-align: left;
+		display: block;
+		line-height: 20px;
+		padding: 0px;
+		text-decoration: none;
+		background-color: transparent !important;
+	}
+	.mainmenu ul li ul li a:hover{
+		position: relative; 
+		width: auto;
+		height: auto; 
+		margin-left: 15px;
+		margin-right: 25px;
+		text-align: left;
+		display: block;
+		line-height: 20px;
+		padding: 0px;
+		text-decoration: none;		
+		background-color: transparent !important;
+	}
+	.mainmenu ul li ul li .mainmenu_txt{
+		padding-left:8px;
+		padding-top:8px;
+		padding-bottom:8px;
+		padding-right: 8px;
+		margin-left: 0px;
+		text-align: left; 
+		background-color:transparent;
+		font-size: 14px; 
+		color: #ffffff !important;
+	}
+	.mainmenu ul li ul li:hover{
+		background-color: transparent;
+	}
+	.submenu_esq{
+		float: left;
+		width: 45%;
+		padding-bottom: 20px;
+	}
+	.submenu_esq a{
+		color: #ffffff !important;
+	}
+	.submenu_esq a .mainmenu_txt{
+		color: #ffffff !important;
+	}
+	.submenu_meio{
+		float: left;
+		width: 20%;
+		padding-bottom: 20px;
+	}
+	.submenu_dir{
+		float: right;
+		width: 35%;
+	}
+	.mainmenu_titulo{
+		padding-left:20px;
+		padding-top:40px;
+		padding-bottom:20px;
+		text-align: left;
+		font-size: 22px;
+		font-weight: 700;
+		width:100%;
+	}
+	.mainmenu_banner{
+		width:100%;
+		height:auto;
+		max-width: none;
+		max-height: none;   
+	}
+	.mainmenu ul li ul img{
+		width: 100%;
+		height:auto;
+		max-width:none;
+		max-height:none;
+	}
+
+
+	.main_header{
+		position: relative;
+		top: 0px;
+		z-index: 999999;
+		width: 100%;
+	}	
+	.main_header, header{
+		background: transparent;
+	}
+
+	.logo_div{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width:80%;
+		margin-right: 20%;
+		padding: 20px;
+		z-index: 9999;
+		background-color: transparent;
+	}
+	a.logo{
+		display: inline-block;
+		width: 100%;
+		margin: 0px;
+		background-color: transparent;
+	}
+	a.logo img{
+		width: 100%;
+		max-width: 100%;
+		background: transparent;
+	}
+
+	.busca_div{
+		margin-top:25px;
+		margin-bottom:20px;
+		text-align: center;
+		width: 100%;
+	}
+	.topo_medio{
+		text-align: right;
+		width: 100%;
+		
+	}
+	.busca_input{
+		display: inline-block;
+		border-top:1px solid #eeeeee;
+		border-left:1px solid #eeeeee;
+		border-bottom:1px solid #eeeeee;
+		border-right: 0px solid transparent;
+		height:40px;
+		border-radius: 0px; 
+		color:#999999 !important;
+		font-family: arial;
+		font-size: 14px;
+		width: 300px;
+		padding: 14px 35px 13px 15px;
+		border-radius: 0;
+		box-shadow: none;
+		background-color: #ffffff !important;
+	}
+
+	.busca_botao{
+		background-color: #ffffff !important;
+		border-top:1px solid #eeeeee;
+		border-right:1px solid #eeeeee;
+		border-bottom:1px solid #eeeeee;
+		height:40px;
+		width: 50px;
+		border-radius: 0px; 
+		background-repeat: no-repeat;
+		background-position: center;
+		color:#999999 !important;
+		font-size: 20px;
+	}
+
+	.mainmenu ul{
+		text-align: right;
+	}
+	.mainmenu ul li{
+		height: auto;
+	}
+	.mainmenu ul li a{
+		width: auto;
+		padding-top:16px;
+		padding-left:10px;
+		padding-right:15px;
+		padding-bottom:18px;
+		display: inline-block;
+	}
+	.mainmenu_txt{
+		height: auto;
+		font-size: 17px;
+		font-weight: 400;
+	}
+	.mainmenu ul li a:hover {
+		background-color: #000000 !important;
+		color: #ff6b01 !important;
+	}
+	.mainmenu ul li a:hover .mainmenu_txt{
+		color: #ff6b01 !important;
+	}
+
+	.mainmenu ul li ul{
+		top:40px;
+		width:440px;
+		min-width:440px;
+		background-color: transparent;
+		border:0px;
+	}
+	.mainmenu ul li ul .setasub{
+		position: absolute;
+		top: 0px;
+		left: 20px;
+	}
+	.mainmenu ul li ul .setasub i{
+		font-size:28px;
+		color: #000000;
+	}
+
+
+	.submenu_esq{
+		width: 100%;
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);		
+		padding-top:25px;
+		margin-top:10px;
+		background-color: #000000;
+	}
+	.mainmenu ul li ul li .mainmenu_txt{
+		font-weight: 400;
+	}
+
+	.botao_carrinho2{
+		display: none;
+	}
+	.topo_botao_user2{
+		display: none;
+	}
+
+	.mainmenu ul li{
+		position: relative;
+	}
+
+	.margemtopo{
+		position: relative;
+		width: 100%;
+		height:130px;
+	}
+
+	.banner_topo{
+		margin-left:10%;
+		text-align: right;
+		margin-right:10%;
+		width: 80%;
+		margin-top: 20px;
+	}
+
+	@media only screen and (max-width:1200px) {
+
+		.margemtopo{
+			height:110px;
+		}
+
+		.busca_div{
+			margin-top:17px;
+		}
+
+		.topo_bordas1{ 
+			padding-left: 15px;
+			padding-right:10px;
+			margin-top:17px;
+			height:40px;
+		}
+		.topo_bordas2{ 
+			margin-top:17px;
+			height:40px;
+			margin-left: -10px;
+			width: 125%;
+		}
+
+		a.topo_botao_blog i{
+			font-size:20px; 
+			vertical-align:middle;
+		}
+
+		.email_topo{
+			display:none;
+		}
+		.whats_topo{
+			float: right;
+			margin-top:25px;
+			font-size: 15px;
+			font-weight: bold;
+			padding-top: 3px;
+			text-align: left;
+			padding-left:20px;
+			padding-right:20px;
+		}
+		.mainmenu ul li a{
+			height: auto;
+			display: inline-block;
+		}
+
+	}
+
+
+	@media only screen and (max-width:990px) {
+
+		.whats_topo{
+			text-align: center;
+			width: 100%; 
+		}
+
+	}
+
+	@media only screen and (max-width:770px) {
+
+		.navbar-toggle{
+			background-color: transparent !important;
+			color: #ffffff;
+		}
+		.margemtopo{
+			height:0px;
+		}
+		a.botao_carrinho{
+			display: none;
+		}
+		.logo_div{
+			position: relative; 
+			width:100% !important;
+			margin-left:0px;
+			margin-right:0px;
+			padding:0px;
+			z-index: 9999;
+			background: transparent;
+
+		}
+		a.logo{
+			display: inline-block;
+			width: 100%;
+			margin: 0px;
+		}
+		a.logo img{
+			width: 50%;
+			max-width: 100%;
+		}
+
+		.setasub{
+			color: #fff
+		}
+		.mainmenu ul li ul{
+			width: 100%;
+			min-width: 100%;
+			top:0px;
+			background-color: transparent;
+		}
+		.submenu_esq{
+			background-color: transparent;			
+			border: 1px solid #fff;
+			padding-top: 15px;
+			margin-top: 11px;
+		}
+		.mainmenu ul li ul li a{
+			padding-left: 20px;
+		}
+		.header-bottom { 
+			margin-top: 10px;
+		}
+
+		.mainmenu{
+			text-align: left !important;
+		}
+		.mainmenu ul li ul .setasub i{
+			display: none;
+		}
+
+		.menu{
+			text-align: center;
+		}
+		header nav ul.menu > li > a{ 
+			font-size: 12px;
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-top:10px;
+			padding-bottom:10px;
+		}
+
+		.mainmenu_txt{
+			color:#ffffff !important;
+		}		 
+		.linha_menu{
+			margin-top:10px !important;
+		}
+		.menu ul li ul{
+			position: relative;
+		}
+		.mainmenu ul li ul li a .mainmenu_txt{
+			color:#ffffff !important;
+		}
+		.menu ul li a .mainmenu_txt:hover{
+			color:#ffffff !important;
+		}
+		.mainmenu ul li{
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+		.menu ul li ul{
+			position: relative;	 
+		}
+		.mainmenu{
+			background-color: #ffffff !important;
+			z-index: 999999;
+		}
+		.navbar-collapse.collapse{
+			padding-top: 20px;
+			box-shadow:none;
+		}
+
+		.mainmenu a{
+			width: 100% !important;
+			display: block !important;
+			color: #ffffff !important;
+			background-color: transparent !important;
+			padding-top: 20px;
+		}
+		.navbar-collapse.collapse{
+			margin-top: 0px;
+		}
+		.menu ul li a{
+			width: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-bottom:10px;
+			padding-top:10px;
+			text-align: left;
+			color: #ffffff !important;
+			background-color: transparent !important;
+		}
+		.menu ul li a:hover{
+			width: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-bottom:10px;
+			padding-top:10px;
+			text-align: left;
+			color: #ffffff !important;
+			background-color: transparent !important;
+		}
+		.menu ul li a .mainmenu_txt{
+			text-align: left;
+			margin-left: 20px;
+			margin-right: 0px;
+			padding-left: 0px;
+			padding-right: 0px;
+			color: #ffffff !important;
+			font-weight: bold;
+		}
+		.mainmenu ul li ul{
+			padding: 0px !important;
+			margin: 0px !important;
+			background-color: transparent !important;
+		}
+		.menu ul li ul{
+			top: 0px;
+			position: relative;
+			width: 100% !important;
+			min-width:100% !important;
+			height: auto !important;
+			min-height:10px;
+			background-color: transparent !important;
+		}
+		.mainmenu ul li ul{
+			position: relative;
+		}
+		.mainmenu ul li ul li{
+			width: 100% !important;
+			max-width:100% !important;
+		}
+		.mainmenu ul{
+			height: auto !important;
+		}
+		.submenu_esq{
+			background-color: transparent !important;
+			border: none;
+			box-shadow:none;
+			padding: 0px;
+			margin: 0px;
+			padding-left: 15px;			
+		}
+		.mainmenu ul li{
+			background-color: transparent !important;
+		}
+		.menu ul li ul li a:hover .mainmenu_txt{
+			color: #ffffff !important;
+			text-decoration: none;
+		}
+		.navbar-collapse.collapse{
+			background-color: transparent !important;
+		}
+		.mainmenu_txt{
+			text-align: left;
+		}
+		.navbar-collapse.collapse, .mainmenu{
+			background-color: transparent !important;
+		}
+		.mainmenu ul li a{
+			padding-left: 20px;
+		}
+		.mainmenu ul li ul li a{
+			padding-left: 10px;}
+		}
+		.mainmenu ul li ul{
+			height: auto !important;
+			min-height: 10px;
+		}
+		.mainmenu ul li ul li a i{
+			display: none;
+		}
+		.mainmenu ul li ul li a:hover{
+			padding-left:10px;
+		}
+		.navbar-collapse.collapse{
+			padding-top: 0px;
+		}
+
+		.banner_topo{
+			margin-left:0px;
+			text-align: center;
+			margin-right:0px;
+			width:100%;
+			margin-top: 20px; 
+		}
+
+		
+
+		.header-middle .container .row .col-sm-8{
+			padding-right: 15px;
+		}
+		.header-middle .container .row .col-sm-4{
+			padding-left: 15px;
+		}
+	}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<header id="header" >
+
+		<div id="topo" class="header-middle topo11" >
+			<div class="container" >
+				<div class="row" >
+
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<div class="logo_div">
+							<a href="https://home.sejahost.com/" class="logo" ><img src="https://home.sejahost.com/arquivos/imagens/logo-[05-01-23][16-21-39].png" ></a>
+						</div>
+				  </div>
+
+					<div class="col-xs-12 col-sm-8 col-md-9">
+
+						<div>
+							
+<div id="banner-79" class="callbacks_container banner_topo" >
+<ul class="rslides" id="slider_topo_79">
+
+	<li  > 
+	<img src='https://home.sejahost.com/arquivos/img_banners/ANUNCIO-TESTE-[19-04-23][17-59-07].gif' > 
+	</li>
+	
+</ul>
+</div>
+						</div>
+
+						<div class="row">
+
+							<div class="col-xs-12 col-sm-6 col-md-7">
+
+								<div class="email_topo" >
+								  <div class="radio_titulo" style="background-color: #000000; color: #ffbf00; "> <strong><i class="fa fa-microphone" aria-hidden="true"></i> NO AR</strong></div>
+								  <div class="radio_proximo">
+                                    <div class='radio_programa' >
+                                      AUTO DJ                                      <span class="radio_apresentador">
+                                      AUTO DJ                                      </span></div>
+								    <div class='radio_apresentador' ></div>
+							      </div>
+								</div>
+
+</div>
+
+							<div class="col-xs-12 col-sm-6 col-md-5">
+
+								<div class="busca_div">
+								
+
+							<div class='redessociais hvr-float-shadow'>
+
+							<a href='https://www.instagram.com' target='_blank' >
+
+							<img src='https://home.sejahost.com/arquivos/img_redes_sociais/instagram-logo-[03-03-21][13-05-41].svg'>
+
+							</a>
+
+							</div>
+
+							
+
+							<div class='redessociais hvr-float-shadow'>
+
+							<a href='https://www.facebook.com/' target='_blank' >
+
+							<img src='https://home.sejahost.com/arquivos/img_redes_sociais/facebok-logo-buton-[03-03-21][13-05-51].svg'>
+
+							</a>
+
+							</div>
+
+							
+
+							<div class='redessociais hvr-float-shadow'>
+
+							<a href='https://www.youtube.com.br' target='_blank' >
+
+							<img src='https://home.sejahost.com/arquivos/img_redes_sociais/youtube-[03-03-21][13-06-25].svg'>
+
+							</a>
+
+							</div>
+
+							
+
+							<div class='redessociais hvr-float-shadow'>
+
+							<a href='#' target='_blank' >
+
+							<img src='https://home.sejahost.com/arquivos/img_redes_sociais/whatsap-[03-03-21][13-08-13].svg'>
+
+							</a>
+
+							</div>
+
+															</div>
+								
+							</div>
+							
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="header-bottom" >
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-'12' col-md-12">				 
+
+						<div class="navbar-header" >
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+								MENU <i class="fa fa-bars" aria-hidden="true"></i>
+							</button>
+						</div>
+
+						<div class="mainmenu">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+
+								<li><a href='https://home.sejahost.com/index'  class='active'  ><span class='mainmenu_txt' ><i class='fa fa-angle-right' aria-hidden='true'></i> HOME</span></a></li><li><a href='https://home.sejahost.com/aradio'  ><span class='mainmenu_txt' ><i class='fa fa-angle-right' aria-hidden='true'></i> A RÁDIO</span></a></li><li><a href='https://home.sejahost.com/blog'  ><span class='mainmenu_txt' ><i class='fa fa-angle-right' aria-hidden='true'></i> NOTÍCIAS</span></a></li><li><a href='https://home.sejahost.com/programacao'  ><span class='mainmenu_txt' ><i class='fa fa-angle-right' aria-hidden='true'></i> PROGRAMAÇÃO</span></a></li><li><a href='https://home.sejahost.com/faleconosco'  ><span class='mainmenu_txt' ><i class='fa fa-angle-right' aria-hidden='true'></i> CONTATO</span></a></li>							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>		
+
+</header>
+
+
+<script type="text/javascript">
+	function abremenu(){
+		$('.navbar-collapse').toggle();
+	}	
+</script>
+
+
+
+<section style="position:relative;" >
+
+<div id="banner-37" class="callbacks_container" style="width: 100%; overflow: hidden;">
+<ul class="rslides" id="slider_37">
+
+	<li  >
+	<div class='banner_personal' >
+	<img src='https://home.sejahost.com/arquivos/img_banners/banernovo2-fw-[03-07-20][14-21-57]-[19-04-23][17-52-50].png' >
+	</div>
+	</li>
+	
+	<li  >
+	<div class='banner_personal' >
+	<img src='https://home.sejahost.com/arquivos/img_banners/banernovo1-fw-[03-07-20][15-07-15]-[19-04-23][17-53-08].png' >
+	</div>
+	</li>
+	
+</ul>
+
+</div>
+<div class="clearfix"></div>
+
+</section>
+
+
+<style type="text/css">
+	.news_botao_1006 {
+		background-color:#ffbf00 !important;
+		color:#ffffff !important;
+	}
+	.news_botao_1006:hover {
+		background-color:#ffffff !important;
+		color:#000000 !important;
+	}
+</style>
+<section id="section-news-fone-1006" class="" style="background-color:#000000 !important; color:#ffffff !important; padding-bottom:50px; ">	
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12" > 
+				<div class="news_texto" style="color:#ffffff !important;">	
+					Faça seu pedido agora!				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-5 col-md-5" > 
+				<input type="text" name="news_fone_nome_1006" id="news_fone_nome_1006" class="form_news" placeholder="Seu pedido aqui!">	
+			</div>
+			
+			<div class="col-xs-12 col-sm-5 col-md-5" > 
+				<input type="text" name="news_fone_numero_1006" id="news_fone_numero_1006" class="form_news" placeholder="Informe seu WhatsApp"  onKeyPress="Mascara(this,telefone)" onKeyDown="Mascara(this,telefone)" maxlength="15" >
+			</div>
+
+			<div class="col-xs-12 col-sm-2 col-md-2" > 
+				<button class="botao_padrao news_botao news_botao_1006" onclick="cadastro_fone_1006();" ><i class="fa fa-comment" aria-hidden="true"></i>
+ FAZER PEDIDO</button></div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+<section id="section-postagens-861" class="animate-effect" style="padding-top:40px; padding-bottom:5px; background-color: #ffffff; ">
+	<div class="container">
+
+		
+		
+			<div class='row' >
+				<div class='col-xs-12 col-sm-12 col-md-12' >
+					<div>
+						<h2 class="titulo_padrao" style="color:#2b2b2b !important; border-color:#2b2b2b !important;font-size: 46px; " >Últimas Notícias</h2>
+						<div class="titulo_padrao_linha" style="color:#2b2b2b; " > 
+					</div>
+				</div>
+			</div>
+
+		
+
+
+		<div class='col-xs-12 col-sm-12 col-md-12' >
+
+			<div class='row' ><div class='col-xs-12 col-sm-4 col-md-4' > 
+						<div class='noticias_2_div' >
+
+						<a class='noticias_2_item' href='https://home.sejahost.com/index/leitura/id/quotninguem-explica-deusquot-de-preto-no-branco-com-gabriela-rocha-atinge-700-milhoes-de-visualizacoes-no-youtube' >
+
+						
+							<div class='noticias_2_3_img' style='background-image:url(https://home.sejahost.com/arquivos/img_postagens_g/167294717736447/ned1-[05-01-23][16-33-16].png);' >
+							<div class='noticias_2_titulo' style='color:#ffffff; background-color:#303030;' >&quot;Ninguém Explica Deus&quot; de Preto no Branco com Gabriela Rocha atinge 700 milhões de visualizações no YouTube</div>
+							</div>
+							
+						</a>
+						</div>
+
+						</div>
+						<div class='col-xs-12 col-sm-4 col-md-4' > 
+						<div class='noticias_2_div' >
+
+						<a class='noticias_2_item' href='https://home.sejahost.com/index/leitura/id/quota-casa-suaquot-do-casa-worship-atinge-400-milhoes-de-visualizacoes-no-youtube' >
+
+						
+							<div class='noticias_2_3_img' style='background-image:url(https://home.sejahost.com/arquivos/img_postagens_g/167294701449353/cw1-[05-01-23][16-30-31].jpg);' >
+							<div class='noticias_2_titulo' style='color:#ffffff; background-color:#303030;' >&quot;A Casa é Sua&quot; do Casa Worship atinge 400 milhões de visualizações no YouTube</div>
+							</div>
+							
+						</a>
+						</div>
+
+						</div>
+						<div class='col-xs-12 col-sm-4 col-md-4' > 
+						<div class='noticias_2_div' >
+
+						<a class='noticias_2_item' href='https://home.sejahost.com/index/leitura/id/bruna-karla-aline-barros-lancam-nova-versao-da-musica-quottudo-possivelquot' >
+
+						
+							<div class='noticias_2_3_img' style='background-image:url(https://home.sejahost.com/arquivos/img_postagens_g/166358056533975/bk1-[17-09-2][03-3-14]-[19-09-22][06-42-53].jpg);' >
+							<div class='noticias_2_titulo' style='color:#ffffff; background-color:#303030;' >Bruna Karla e Aline Barros lançam nova versão da música &quot;Tudo é Possível&quot;</div>
+							</div>
+							
+						</a>
+						</div>
+
+						</div>
+						</div>				<style type="text/css">
+
+					.pagination li a, .pagination li span{
+						background-color: #333333 !important;
+						color: #ffffff !important;
+						border-radius:3px !important;
+					}
+					.pi-pagenav li .active{
+						background-color: #141414 !important;
+						color: #ffffff !important;
+						border-radius:3px !important;
+					}
+
+				</style>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12" >
+						<div class="pi-pagenav" style="padding-top:10px; margin-bottom:30px; " >
+							<ul class='pagination'></ul>						</div>
+					</div>
+				</div>
+				
+		</div>
+
+		
+
+</div>
+
+
+
+</section>
+<style type="text/css">
+	
+	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+		background-color: #2c2f7e !important;
+	}
+
+</style>
+<section id="section-parceiros-1117" class="" style="padding-top:0px; padding-bottom:-50px; background-color: #ffffff; ">
+	<div class="container">
+
+		
+		
+		
+		<ul id="parceiros-1117" >
+			
+				<li class='parceiros_item' >
+				<div class='parceiros_img_div'>
+				<a class='parceiros_img' href='' target='_blank' >
+				<img src='https://home.sejahost.com/arquivos/img_parceiros/anuncieaqui-[26-08-21][16-32-01]-[19-09-22][08-54-04].jpg' >
+				</a>
+				</div>
+				</li>
+				
+				<li class='parceiros_item' >
+				<div class='parceiros_img_div'>
+				<a class='parceiros_img' href='' target='_blank' >
+				<img src='https://home.sejahost.com/arquivos/img_parceiros/anuncieaqui-[26-08-21][16-32-01]-[19-09-22][08-56-03].jpg' >
+				</a>
+				</div>
+				</li>
+				
+				<li class='parceiros_item' >
+				<div class='parceiros_img_div'>
+				<a class='parceiros_img' href='' target='_blank' >
+				<img src='https://home.sejahost.com/arquivos/img_parceiros/anuncieaqui-[26-08-21][16-32-01]-[19-09-22][08-53-25].jpg' >
+				</a>
+				</div>
+				</li>
+				
+				<li class='parceiros_item' >
+				<div class='parceiros_img_div'>
+				<a class='parceiros_img' href='' target='_blank' >
+				<img src='https://home.sejahost.com/arquivos/img_parceiros/anuncieaqui-[26-08-21][16-32-01]-[19-09-22][08-55-37].jpg' >
+				</a>
+				</div>
+				</li>
+				
+				<li class='parceiros_item' >
+				<div class='parceiros_img_div'>
+				<a class='parceiros_img' href='' target='_blank' >
+				<img src='https://home.sejahost.com/arquivos/img_parceiros/anuncieaqui-[26-08-21][16-32-01]-[19-09-22][08-55-23].jpg' >
+				</a>
+				</div>
+				</li>
+						</ul>
+
+	</div>
+</section>
+<section id="section-caracteristicas-1119" class="animate-effect" style="padding-top:30px; padding-bottom:50px; background-color: #121212; ">
+	<div class="container">
+
+		
+			<div class='row' >
+				<div class='col-xs-12 col-sm-12 col-md-12' >
+					<div>
+						<h2 class="titulo_padrao" style="color:#ffffff !important; border-color:#ffffff !important;font-size: 46px; " >As Mais Tocadas</h2>
+						<div class="titulo_padrao_linha" style="color:#ffffff; " ></div> 
+					</div>
+				</div>
+			</div>
+
+		
+		
+		<div class='row' ><div class='col-xs-12 col-sm-3 col-md-3' > 
+			<div class='caracteristicas_div' >
+			<div class='caracteristicas_img' >
+			<img src='https://home.sejahost.com/arquivos/img_caracteristicas/menor-696x696-[19-09-22][05-16-43].jpg' >
+			</div>
+			<div class='caracteristicas_titulo' style='color:#ffffff' >TOP 1 - Poder Pra Salvar / Aline Barros</div>
+			<div class='caracteristicas_descricao' style='color:#ffffff' ></div>
+			</div>
+			</div>
+			<div class='col-xs-12 col-sm-3 col-md-3' > 
+			<div class='caracteristicas_div' >
+			<div class='caracteristicas_img' >
+			<img src='https://home.sejahost.com/arquivos/img_caracteristicas/Screnshot-4-[19-09-22][05-22-37].jpg' >
+			</div>
+			<div class='caracteristicas_titulo' style='color:#ffffff' >TOP 2 - Escolho Deus / Thalles Roberto</div>
+			<div class='caracteristicas_descricao' style='color:#ffffff' ></div>
+			</div>
+			</div>
+			<div class='col-xs-12 col-sm-3 col-md-3' > 
+			<div class='caracteristicas_div' >
+			<div class='caracteristicas_img' >
+			<img src='https://home.sejahost.com/arquivos/img_caracteristicas/menor-696x696-copiar-[19-09-22][05-24-26].jpg' >
+			</div>
+			<div class='caracteristicas_titulo' style='color:#ffffff' >TOP 3 - Cassiane - Não Posso Desistir</div>
+			<div class='caracteristicas_descricao' style='color:#ffffff' ></div>
+			</div>
+			</div>
+			<div class='col-xs-12 col-sm-3 col-md-3' > 
+			<div class='caracteristicas_div' >
+			<div class='caracteristicas_img' >
+			<img src='https://home.sejahost.com/arquivos/img_caracteristicas/123-[19-09-22][05-25-59].jpg' >
+			</div>
+			<div class='caracteristicas_titulo' style='color:#ffffff' >TOP 4 - Kemuel, Ton Carfi - Aba</div>
+			<div class='caracteristicas_descricao' style='color:#ffffff' ></div>
+			</div>
+			</div>
+			</div>
+	</div>
+</section><style type="text/css">
+	.fotos2_titulo{
+		color:#1c1c1c;
+	}	
+</style>
+
+<section id="section-fotos-1125" class="animate-effect" style="padding-top:50px; padding-bottom:80px; background-color: #f2f2f2; ">
+	<div class="container">
+		
+		
+			<div class='row' >
+				<div class='col-xs-12 col-sm-12 col-md-12' >
+					<div>
+						<h2 class="titulo_padrao" style="color:#1c1c1c !important; border-color:#1c1c1c !important;font-size: 46px; " >Galeria de Fotos</h2>
+						<div class="titulo_padrao_linha" style="color:#1c1c1c; " ></div> 
+					</div>
+				</div>
+			</div>
+
+		
+		<div style='width:100%; margin-bottom:30px;' class='ampliar_imagem' ><div class='row' style='padding-left:15px; padding-right:15px;' ><div class='col-xs-12 col-sm-3 col-md-3' style='padding-left:5px;padding-top:5px; padding-right:5px;' > 
+						<a class='fotos1_div' style='background-image:url(https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-2-[19-09-22][04-08-33].jpg);' href='https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-2-[19-09-22][04-08-33].jpg' ></a>
+						</div>
+						<div class='col-xs-12 col-sm-3 col-md-3' style='padding-left:5px;padding-top:5px; padding-right:5px;' > 
+						<a class='fotos1_div' style='background-image:url(https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-4-[19-09-22][04-08-36].jpg);' href='https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-4-[19-09-22][04-08-36].jpg' ></a>
+						</div>
+						<div class='col-xs-12 col-sm-3 col-md-3' style='padding-left:5px;padding-top:5px; padding-right:5px;' > 
+						<a class='fotos1_div' style='background-image:url(https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-[19-09-22][04-09-28].jpg);' href='https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-[19-09-22][04-09-28].jpg' ></a>
+						</div>
+						<div class='col-xs-12 col-sm-3 col-md-3' style='padding-left:5px;padding-top:5px; padding-right:5px;' > 
+						<a class='fotos1_div' style='background-image:url(https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-[19-09-22][04-09-29].jpg);' href='https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-[19-09-22][04-09-29].jpg' ></a>
+						</div>
+						</div><div class='row' style='padding-left:15px; padding-right:15px;' ><div class='col-xs-12 col-sm-3 col-md-3' style='padding-left:5px;padding-top:5px; padding-right:5px;' > 
+						<a class='fotos1_div' style='background-image:url(https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/2-2-[19-09-22][04-08-40].jpg);' href='https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/2-2-[19-09-22][04-08-40].jpg' ></a>
+						</div>
+						<div class='col-xs-12 col-sm-3 col-md-3' style='padding-left:5px;padding-top:5px; padding-right:5px;' > 
+						<a class='fotos1_div' style='background-image:url(https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-[19-09-22][04-08-37].jpg);' href='https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-[19-09-22][04-08-37].jpg' ></a>
+						</div>
+						<div class='col-xs-12 col-sm-3 col-md-3' style='padding-left:5px;padding-top:5px; padding-right:5px;' > 
+						<a class='fotos1_div' style='background-image:url(https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-3-[19-09-22][04-08-34].jpg);' href='https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-Copia-3-[19-09-22][04-08-34].jpg' ></a>
+						</div>
+						<div class='col-xs-12 col-sm-3 col-md-3' style='padding-left:5px;padding-top:5px; padding-right:5px;' > 
+						<a class='fotos1_div' style='background-image:url(https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-[19-09-22][04-08-38].jpg);' href='https://home.sejahost.com/arquivos/img_fotos_g/162930200622821/1-[19-09-22][04-08-38].jpg' ></a>
+						</div>
+						</div></div>
+	</div>
+</section><style type="text/css">
+	.videos_conteudo iframe{
+		max-width: 100% !important;
+		height:315px !important;
+	}
+	.videos_titulo{
+		color:#ffffff;
+	}
+	.videos_descricao{
+		color:#ffffff;
+	}
+	.videos_titulo{
+		color:#ffffff;
+	}
+</style>
+<section id="section-videos-1123" class="animate-effect" style="padding-top:50px; padding-bottom:80px; font-size: 16px; background-color: #1c1c1c; ">
+	<div class="container">
+		
+		
+			<div class='row' >
+				<div class='col-xs-12 col-sm-12 col-md-12' >
+					<div>
+						<h2 class="titulo_padrao" style="color:#ffffff !important;font-size: 46px; border-color:#ffffff !important" >Vídeos Destaques</h2>
+						<div class="titulo_padrao_linha" style="color:#ffffff; " ></div> 
+					</div>
+				</div>
+			</div>
+
+		
+		<div class='row' ><div class='col-xs-12 col-sm-6 col-md-6' > 
+				<div class='videos_div' >
+				<div class='videos_titulo'  >Elaine Martins - Sei é Bem Assim</div>
+				<div class='videos_descricao' >Elaine Martins - Sei é Bem Assim</div>
+				<div class='videos_conteudo' ><iframe width="560" height="315" src="https://www.youtube.com/embed/3xzNI2Gs_30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>border-radius: 6px;</div>
+
+				</div>
+				</div>
+				<div class='col-xs-12 col-sm-6 col-md-6' > 
+				<div class='videos_div' >
+				<div class='videos_titulo'  >Davi Sacer - Tua Graça me Basta</div>
+				<div class='videos_descricao' >Davi Sacer - Tua Graça me Basta</div>
+				<div class='videos_conteudo' ><iframe width="560" height="315" src="https://www.youtube.com/embed/4y0_rOSnb_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>border-radius: 6px;</div>
+
+				</div>
+				</div>
+				</div>
+	</div>
+</section>
+<section id="section-enquete-1121" class="animate-effect" style="padding-top:50px; padding-bottom:80px; background-color: #ffdd00; ">
+	<div class="container">
+
+		
+			<div class='row' >
+				<div class='col-xs-12 col-sm-12 col-md-12' >
+					<div>
+						<h2 class="titulo_padrao" style="color:#000000 !important; border-color:#000000 !important;font-size:46px; " >Enquete</h2>
+						<div class="titulo_padrao_linha" style="color:#000000; " ></div> 
+					</div>
+				</div>
+			</div>
+
+		
+
+
+    <div class='row' >
+
+
+
+      
+
+
+      
+
+
+      
+        <div class='col-xs-12 col-sm-6 col-md-6' >
+
+          
+                          <div style="margin-top:20px; text-align:center;" >
+                <img src="https://home.sejahost.com/arquivos/img_enquetes/sliderSoundPRO3-[18-09-2][2-39-43]-[05-01-23][15-34-57].png" style="max-width:100%;" >
+              </div>
+                        
+          
+        </div>
+
+        <div class='col-xs-12 col-sm-6 col-md-6' >
+
+
+          
+          <div style="color:#000000; margin-top: 20px;" >
+                      </div>
+
+          
+                    
+          <div style="padding:20px; width: 100%; background-color:#ffffff; margin-top: 20px;">
+            <form  id="enquete_1121" name="enquete_1121" >  
+              <div style="font-size: 18px; color:#000; padding-bottom: 20px; color:#333333">Você curtiu nosso NOVO SITE ?</div>
+
+              <div style='padding-top:5px;' > <input type='radio' name='enquete' id='resposta_162922413372055' value='162922413372055' > <label for='resposta_162922413372055' style='color:#393838' >SIM</label></div><div style='padding-top:5px;' > <input type='radio' name='enquete' id='resposta_162922414640350' value='162922414640350' > <label for='resposta_162922414640350' style='color:#393838' >ÓTIMO</label></div><div style='padding-top:5px;' > <input type='radio' name='enquete' id='resposta_162922419426621' value='162922419426621' > <label for='resposta_162922419426621' style='color:#393838' >BOM</label></div><div style='padding-top:5px;' > <input type='radio' name='enquete' id='resposta_162922420649942' value='162922420649942' > <label for='resposta_162922420649942' style='color:#393838' >RUIM</label></div>
+              <div style="margin-top:30px;">
+
+                <input id="enviar_voto" type="button" value="VOTAR" class="botao_enquete hvr-float-shadow" onClick="votar_1121();" style="border:0px; font-size: 14px; padding-left:15px; padding-right:15px; padding-top: 10px; padding-bottom: 10px; background-color: #2c2f7e; color:#ffffff; " >
+
+                <input type="hidden" name="codigo" value="162922412619027">
+
+                <input type="button" value="RESULTADO" class="botao_enquete hvr-float-shadow" onClick="modal('https://home.sejahost.com/index/resultado_enquete/codigo/162922412619027', 'Resultado');" style="background-color: #2c2f7e; color:#ffffff; border:0px; font-size: 14px; padding-left:15px; padding-right:15px; padding-top: 10px; padding-bottom: 10px; ">
+
+              </div>
+
+            </form>
+          </div>
+
+
+        </div>
+
+        
+
+
+    </div>
+
+
+  </div>
+</section>
+<section id="section-equipe-1141" class="animate-effect" style="padding-top:50px; padding-bottom:80px; background-color: #191919; ">
+	<div class="container">
+
+		
+			<div class='row' >
+				<div class='col-xs-12 col-sm-12 col-md-12' >
+					<div>
+						<h2 class="titulo_padrao" style="color:#ffffff !important; border-color:#ffffff !important; font-size: 46px; " >Nossa Equipe</h2>
+						<div class="titulo_padrao_linha" style="color:#ffffff; " ></div> 
+					</div>
+				</div>
+			</div>
+
+		
+		
+		<div class='row' ><div class='col-xs-12 col-sm-3 col-md-3' > 
+			<div class='equipe_div' >
+			<div class='equipe_img' >
+			<img src='https://home.sejahost.com/arquivos/img_equipe/1-[05-01-23][17-59-39].jpg' >
+			</div>
+			<div class='equipe_titulo' style='color:#ffffff' >Equipe 01</div>
+			<div class='equipe_descricao' style='color:#ffffff' ></div>
+			</div>
+			</div>
+			<div class='col-xs-12 col-sm-3 col-md-3' > 
+			<div class='equipe_div' >
+			<div class='equipe_img' >
+			<img src='https://home.sejahost.com/arquivos/img_equipe/2-[05-01-23][17-59-51].jpg' >
+			</div>
+			<div class='equipe_titulo' style='color:#ffffff' >Equipe 02</div>
+			<div class='equipe_descricao' style='color:#ffffff' ></div>
+			</div>
+			</div>
+			<div class='col-xs-12 col-sm-3 col-md-3' > 
+			<div class='equipe_div' >
+			<div class='equipe_img' >
+			<img src='https://home.sejahost.com/arquivos/img_equipe/3-[05-01-23][18-00-22].jpg' >
+			</div>
+			<div class='equipe_titulo' style='color:#ffffff' >Equipe 03</div>
+			<div class='equipe_descricao' style='color:#ffffff' ></div>
+			</div>
+			</div>
+			<div class='col-xs-12 col-sm-3 col-md-3' > 
+			<div class='equipe_div' >
+			<div class='equipe_img' >
+			<img src='https://home.sejahost.com/arquivos/img_equipe/4-[05-01-23][18-00-36].jpg' >
+			</div>
+			<div class='equipe_titulo' style='color:#ffffff' >Equipe 04</div>
+			<div class='equipe_descricao' style='color:#ffffff' ></div>
+			</div>
+			</div>
+			</div>
+	</div>
+</section>
+<section style="position:relative;" >
+
+<div id="banner-1159" class="callbacks_container" style="width: 100%; overflow: hidden;">
+<ul class="rslides" id="slider_1159">
+
+	<li  onClick="window.open('#', '_blank');"  >
+	<div class='banner_personal' >
+	<img src='https://home.sejahost.com/arquivos/img_banners/SLIDEO-[19-09-22][08-43-51].jpg' >
+	</div>
+	</li>
+	
+</ul>
+
+</div>
+<div class="clearfix"></div>
+
+</section>
+<style type="text/css">
+
+	.rodape {
+		background-color: #000000;
+		padding-top: 20px; 
+	}
+
+	.footer-grid ul, .footer-grid ul li{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}  
+	.footer-grid ul li a{
+		display: block;
+		border-bottom: 1px solid rgba(201, 201, 201, 0.05);
+		padding-bottom:4px;
+		margin-bottom:4px;
+		padding-top: 0px;
+		font-size:15px;
+		color: #ffffff !important;
+	}
+	.footer-grid h3{
+		font-size: 1.4em;
+		text-transform: uppercase;
+		margin-bottom:30px;
+		font-weight: normal;
+		color: #ffffff !important;
+	}
+	.rodape_contatos{
+		font-size:15px;
+		color: #ffffff !important;
+		line-height:16px;
+	}
+ 
+	.rodape_copy{
+		background-color: #000000;
+	}
+	.rodape_copy a{
+		width: 100%;
+		text-align: center; 
+		padding-bottom: 20px;
+		padding-top:20px;
+		display: block;
+		font-size: 13px;
+		background-color: #000000;
+		color: #ffffff !important;
+	}
+	.rodape_copy a:hover{
+		color: #ffffff;
+	}
+
+
+	.categorias_rodape ul li{
+
+	}
+	.categorias_rodape ul li a{
+		font-size: 15px !important;
+		border-bottom:0px;
+		padding-bottom: 0px;
+	}
+
+
+	.logo_rodape{
+		margin-top:15px;
+		margin-bottom: 20px;
+	}
+	.logo_rodape img{
+		width: 80%;
+	}
+	
+	.redessociais img{
+		width: 35px;
+	}
+
+	@media (max-width: 990px){
+
+		.rodape_copy_esq{
+			text-align: center;
+		}
+		.rodape_copy_dir {
+			text-align: center;
+			padding-top: 0px;
+		}
+
+	}
+
+	@media (max-width:768px){
+
+		.rodape_copy_esq{
+			text-align: center;
+		}
+		.rodape_copy_dir {
+			text-align: center;
+			padding-top: 0px;
+		}
+
+		.logo_rodape img{
+			width:50%;
+		}
+
+		.redessociais img{
+			width: 30px;
+		}
+
+		.footer-grid h3{
+			margin-top:40px;
+		}
+
+	}
+
+	
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="rodape" >
+
+		<div class="container">
+
+			<div class="row">
+
+
+
+				<div class="col-xs-12 col-sm-12 col-md-3" >
+
+
+
+					<div class="logo_rodape" ><img src="https://home.sejahost.com/arquivos/imagens/logo-[05-01-23][16-21-27].png"></div>
+
+
+
+					<div style="margin-top: 20px;">
+
+						
+
+							<div class='redessociais hvr-float-shadow'>
+
+							<a href='https://www.instagram.com' target='_blank' >
+
+							<img src='https://home.sejahost.com/arquivos/img_redes_sociais/instagram-logo-[03-03-21][13-05-41].svg'>
+
+							</a>
+
+							</div>
+
+							
+
+							<div class='redessociais hvr-float-shadow'>
+
+							<a href='https://www.facebook.com/' target='_blank' >
+
+							<img src='https://home.sejahost.com/arquivos/img_redes_sociais/facebok-logo-buton-[03-03-21][13-05-51].svg'>
+
+							</a>
+
+							</div>
+
+							
+
+							<div class='redessociais hvr-float-shadow'>
+
+							<a href='https://www.youtube.com.br' target='_blank' >
+
+							<img src='https://home.sejahost.com/arquivos/img_redes_sociais/youtube-[03-03-21][13-06-25].svg'>
+
+							</a>
+
+							</div>
+
+							
+
+							<div class='redessociais hvr-float-shadow'>
+
+							<a href='#' target='_blank' >
+
+							<img src='https://home.sejahost.com/arquivos/img_redes_sociais/whatsap-[03-03-21][13-08-13].svg'>
+
+							</a>
+
+							</div>
+
+							
+						<div style="clear: both;"></div>
+
+					</div>
+
+
+
+				</div>
+
+
+
+				<div class="col-xs-12 col-sm-12 col-md-6" >
+
+					<div class="footer-grid">
+
+						<h3 style="font-weight: bold">A RÁDIO</h3>
+
+						<div class="row">
+
+							<div class="col-xs-12 col-sm-6 col-md-6">
+
+								<ul>
+
+									<li><a href='https://home.sejahost.com/index' ><i class='fas fa-caret-right'></i> Home</a></li><li><a href='https://home.sejahost.com/aradio' ><i class='fas fa-caret-right'></i> Sobre</a></li><li><a href='https://home.sejahost.com/blog' ><i class='fas fa-caret-right'></i> Noticias</a></li>
+								</ul>				  
+
+							</div>
+
+							<div class="col-xs-12 col-sm-6 col-md-6">
+
+								<ul>
+
+									<li><a href='https://home.sejahost.com/faleconosco' ><i class='fas fa-caret-right'></i> Contato</a></li><li><a href='https://home.sejahost.com/programacao' ><i class='fas fa-caret-right'></i> Programação</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div style="clear: both;"></div>
+
+				</div>
+
+
+
+				<div class="col-xs-12 col-sm-6 col-md-3">
+
+					
+
+					<div class="footer-grid">
+
+						<h3 style="font-weight: bold">ATENDIMENTO</h3>
+
+					</div>
+
+
+
+					<div class='rodape_contatos'>
+
+						<i class="fab fa-whatsapp" aria-hidden="true"></i> (99) 9999-9999<br>						
+
+						<i class="fa fa-envelope" aria-hidden="true"></i> contato@seudominio.com.br
+						<br />
+
+						<i class="fas fa-map-marker" aria-hidden="true"></i>  São Paulo - SP
+					</div>
+
+
+
+				</div>
+
+
+
+			</div>
+
+			<div style="width: 100%; padding-top:30px;"></div>
+
+		</div>
+
+		
+
+		<div class="rodape_copy" style="padding-bottom:50px;" >
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-12 col-md-12" >					
+
+						<a href="/" target="_blank" >Copyright © 2024. Todos os direitos reservados.</a>
+						<td width="25" align="left">&nbsp;</td>
+        <center><td width="250" align="left"><center><a href="https://www.sejahost.com.br" target="_blank" title="SejaHost Streaming e Hospedagem"><img src="https://sejahost.com.br/img/apple-touch-icon.png" alt="SejaHost Streaming e Hospedagem" width="30" height="30"/></a></center></td>
+
+
+						
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+		</footer>
+
+	
+
+	</div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="ico_whats" style="position: fixed; bottom:20px; right: 20px; z-index: 999999; cursor: pointer;">
+
+		<img src="https://home.sejahost.com/views/img/whatsapp.fw.png" width="78px" height="78px" >	</div>
+
+
+
+		<div id="whats_janela" >
+
+
+
+			<div class="whats_janela_top">
+
+				<table width="334" height="27" border="0" cellpadding="0" cellspacing="0">
+
+					<tr>
+
+						<td width="63"><span style="margin-top:10px; margin-bottom: 20px;"><img src="https://home.sejahost.com/views/img/perfilwhats.fw.png" width="61" height="61" style="width:100%;" /></span></td>
+
+						<td width="281"><div align="left">Atendimento Via <strong>WhatsApp <i class="fab fa-whatsapp" aria-hidden="true"></i></strong><br />
+
+						Olá!👋Faça seu pedido estamos esperando por você. 🤝</div></td>
+
+					</tr>
+
+				</table>
+
+			</div>
+
+
+
+			<div style="padding: 20px;">
+
+				<form action="https://home.sejahost.com/index/iniciar_conversa" method="post" target="_blank" >
+
+
+
+					<div ><input type="text" class="form-control" name="nome" placeholder="Nome" ></div> 
+
+
+
+					<div style="margin-top: 15px;" ><textarea class="form-control" name="msg" placeholder="Digite sua mensagem" style="height:60px;"></textarea></div>
+
+
+
+					<div style="margin-top: 15px;" >
+
+						<button class="whats_janela_bt" >Iniciar a Conversa</button>
+
+					</div>
+
+
+
+				</form>
+
+			</div>
+
+
+
+		</div>
+
+
+
+		
+
+
+
+
+	<style type="text/css">
+
+
+
+
+
+	#preloader {
+
+		position:fixed;
+
+		top:0;
+
+		left:0;
+
+		right:0;
+
+		bottom:0;
+
+		background-color:#FFBF00; /* cor do background que vai ocupar o body */
+
+		z-index:999999999999999; /* z-index para jogar para frente e sobrepor tudo */
+
+	}
+
+	#preloader .inner {
+
+		position: absolute;
+
+		top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+
+		left: 50%;
+
+		transform: translate(-50%, -50%);  
+
+	}
+
+	.bolas > div {
+
+		display: inline-block;
+
+		background-color: #fff;
+
+		width: 25px;
+
+		height: 25px;
+
+		border-radius: 100%;
+
+		margin: 3px;
+
+		-webkit-animation-fill-mode: both;
+
+		animation-fill-mode: both;
+
+		animation-name: animarBola;
+
+		animation-timing-function: linear;
+
+		animation-iteration-count: infinite;
+
+
+
+	}
+
+	.bolas > div:nth-child(1) {
+
+		animation-duration:0.75s ;
+
+		animation-delay: 0;
+
+	}
+
+	.bolas > div:nth-child(2) {
+
+		animation-duration: 0.75s ;
+
+		animation-delay: 0.12s;
+
+	}
+
+	.bolas > div:nth-child(3) {
+
+		animation-duration: 0.75s  ;
+
+		animation-delay: 0.24s;
+
+	}
+
+
+
+	@keyframes animarBola {
+
+		0% {
+
+			-webkit-transform: scale(1);
+
+			transform: scale(1);
+
+			opacity: 1;
+
+		}
+
+		16% {
+
+			-webkit-transform: scale(0.1);
+
+			transform: scale(0.1);
+
+			opacity: 0.7;
+
+		}
+
+		33% {
+
+			-webkit-transform: scale(1);
+
+			transform: scale(1);
+
+			opacity: 1; 
+
+		} 
+
+	}
+
+	/* end: Preloader */
+
+
+
+</style>
+
+
+
+<!-- início do preloader -->
+
+<div id="preloader">
+
+	<div class="inner">
+
+		<!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+
+		<div class="bolas">
+
+			<div></div>
+
+			<div></div>
+
+			<div></div>                    
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- fim do preloader --> 
+
+ 
+
+  
+
+
+
+  <script type="text/javascript" src="https://home.sejahost.com/views/js/jquery-2.2.4.min.js" ></script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/api/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/js/bootstrap.min.js" ></script>    
+  <script type="text/javascript" src="https://home.sejahost.com/views/api/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script type="text/javascript" >function dominio(){ return 'https://home.sejahost.com/'; }</script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/js/funcoes.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/js/animation.js"></script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/js/responsiveslides.min.js"></script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/api/select2/select2.full.min.js"></script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/api/bxslider/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/api/photobox-master/photobox/jquery.photobox.js"></script>
+  <script type="text/javascript" src="https://home.sejahost.com/views/api/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+
+ 
+
+        
+      <script>        
+        $("#slider_topo_79").responsiveSlides({
+          auto: true,
+          pager: false,
+          nav: false,
+          speed: 500,
+          pause: true,
+          pauseControls: true,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+
+      </script>
+      
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+          <script>
+
+        $("#slider_37").responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: true,
+          speed: 500,
+          pause: true,
+          pauseControls: true,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+
+      </script>
+      
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+          <script type="text/javascript">
+        function cadastro_fone_1006(){
+          var nome = $('#news_fone_nome_1006').val();
+          var fone = $('#news_fone_numero_1006').val();
+          modal('https://home.sejahost.com/index/cadastro_fone/fone/'+fone+'/nome/'+nome+'/grupo/161478478131443');
+        }
+      </script>
+      
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+     
+
+
+    
+
+    
+      <script type="text/javascript">
+        $('#parceiros-1117').bxSlider({
+          controls : true,
+          pager : true,
+          minSlides : 1,
+          maxSlides : 4,
+          slideWidth :300,
+          slideMargin :15
+        });
+
+      </script>
+
+      
+
+    
+    
+    
+
+    
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+     
+
+
+    
+
+    
+
+    
+    
+      <script type="text/javascript">
+
+        function votar_1121(){
+
+          $('#modal_janela').modal('show');
+          $('#modal_conteudo').html("<div style='text-align:center;'><img src='https://home.sejahost.com/views/img/loading.gif' style='width:25px;'></div>");
+
+          var dados = $("#enquete_1121").serialize();
+
+          $.post('https://home.sejahost.com/index/enquete_votar', dados,function(data){
+            if(data){
+              $('#modal_conteudo').html(data);
+            }
+          });
+
+        }
+
+      </script>
+
+      
+    
+
+    
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+          <script>
+
+        $("#slider_1159").responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: true,
+          speed: 500,
+          pause: true,
+          pauseControls: true,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+
+      </script>
+      
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+     
+
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+  
+  <script>
+    $(function () {
+
+      $(".select2").select2();
+
+      $('.ampliar_imagem').photobox('a',{ time:0 });
+
+      $('#ico_whats').click( function() {
+
+        $('#whats_janela').toggle();
+
+      });
+
+    });
+  </script>
+
+  <script type="text/javascript">
+    function recusar_cokies(){
+     window.location='https://www.google.com.br';
+   }
+   function aceitar_cokies(){
+    $.post('https://home.sejahost.com/index/cookies_aceitar', {token: '1705207954'},function(data){
+      if(data){
+        $('.politica_cookies').hide();
+      }
+    });
+  }
+</script>
+
+
+<script type="text/javascript">
+  $(window).on('load', function () {
+    $('#preloader .inner').fadeOut();
+    $('#preloader').delay(10).fadeOut('slow'); 
+    $('body').delay(10).css({'overflow': 'visible'});
+  })
+</script>
+
+</body>
+</html>
